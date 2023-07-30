@@ -1,13 +1,25 @@
-import { useState, useEffect } from 'react';
-import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell, MantineThemeOverride } from '@mantine/core';
-import { useColorScheme } from '@mantine/hooks';
+import { useEffect } from 'react';
+import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell, Header, MantineThemeOverride } from '@mantine/core';
+import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 import Profile from './components/Profile';
+import AppHeader from './components/AppHeader';
 
 
 const App = () => {
   return (
       <AppShell
-      padding="0">
+      fixed
+      header={<Header height={60} p="xs"><AppHeader/></Header>}
+      padding="xs"
+      styles={{
+        main: {
+          height: "100%",
+        },
+        body: {
+          height: "100%",
+        },
+      }}
+      >
       <Profile/>
     </AppShell>
   );
@@ -34,16 +46,19 @@ const darkTheme: MantineThemeOverride = {
 export default function Main() {
   // hook will return either 'dark' or 'light' on client
   // and always 'light' during ssr as window.matchMedia is not available
-  const preferredColorScheme = useColorScheme(undefined,{
+  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+    key: 'mantine-color-scheme',
+    defaultValue: undefined,
     getInitialValueInEffect: true
   });
-  const [colorScheme, setColorScheme] = useState<ColorScheme>(preferredColorScheme);
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
+  useHotkeys([['mod+J', () => toggleColorScheme()]]);
+
   useEffect(()=>{
-    toggleColorScheme(preferredColorScheme);
-  },[preferredColorScheme])
+    toggleColorScheme(colorScheme);
+  },[])
 
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>

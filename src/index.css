@@ -84,4 +84,12 @@ button:focus-visible {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
+    header{
+      display:none!important;
+    }
+
+    main{
+      padding:0!important;
+    }
 }
