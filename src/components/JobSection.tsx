@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
-import { Timeline, Text, List, Badge, Center, Box, Title } from '@mantine/core';
+import { Timeline, Text, Badge, Center, Box, Title } from '@mantine/core';
 import { useHover } from '@mantine/hooks';
+import ReactMarkdown from 'react-markdown';
 import { myJobExp } from "../data";
 import { JobExprience, WorkDuration } from '../types/jobExperience.type';
 import { IconCalendarEvent, IconWorld, IconBriefcase, IconBuilding } from '@tabler/icons-react';
@@ -12,13 +13,8 @@ const CompanyName = ({companyName, companyLink} :{companyName: string, companyLi
   return <Text size="sm" ml={5} mr={10}>{companyName}</Text>;
 }
 
-const JobDescriptions = ({descriptions} :{descriptions: string[]}) => {
-  return (
-    <List size="sm" color="dimmed" withPadding>
-      {descriptions.map((desc, idx)=>{
-        return <List.Item key={`${idx}_${desc.substring(0)}`}>{desc}</List.Item>;
-      })}
-    </List>);
+const JobDescriptions = ({descriptions} :{descriptions: string}) => {
+  return <ReactMarkdown children={descriptions} />;
 }
 
 const WorkDurationText = ({workDuration} :{workDuration: WorkDuration}) => {
@@ -38,7 +34,7 @@ const JobExprience = ({data } :{data: JobExprience}) => {
         <Box>
           <Center inline><IconBuilding size="1.125rem"/><CompanyName companyName={data.companyName} companyLink={data.companyUrl}/><IconWorld size="1.125rem"/><Text size="sm" ml={5}>{data.location}</Text></Center>
           {data.workDuration.map(workDuration => <WorkDurationText workDuration={workDuration} key={`${workDuration.title} ${workDuration.fromDate.year}`}/>)}
-          <Box w='90%'>
+          <Box className="job-description" w='90%'>
             <JobDescriptions descriptions={data.descriptions}/>
           </Box>
           

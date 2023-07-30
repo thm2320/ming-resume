@@ -3,7 +3,7 @@ export interface JobExprience {
     companyName: string;
     companyUrl?:string;
     location: string;
-    descriptions: string[];
+    descriptions: string;
 }
 
 export enum WorkMode {

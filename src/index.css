@@ -68,3 +68,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.job-description > ul{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
