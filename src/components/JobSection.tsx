@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { Timeline, Text, Badge, Center, Box, Title } from '@mantine/core';
+import { Timeline, Text, Badge, Center, Box, Title, Flex, Container } from '@mantine/core';
 import { useHover } from '@mantine/hooks';
 import ReactMarkdown from 'react-markdown';
 import { myJobExp } from "../data";
@@ -31,14 +31,16 @@ const WorkDurationText = ({workDuration} :{workDuration: WorkDuration}) => {
 
 const JobExprience = ({data } :{data: JobExprience}) => {
   return (
-        <Box>
-          <Center inline><IconBuilding size="1.125rem"/><CompanyName companyName={data.companyName} companyLink={data.companyUrl}/><IconWorld size="1.125rem"/><Text size="sm" ml={5}>{data.location}</Text></Center>
+        <Container fluid>
+          <Flex maw='100%' wrap="wrap">
+              <Center inline><IconBuilding size="1.125rem"/><CompanyName companyName={data.companyName} companyLink={data.companyUrl}/></Center>
+              <Center><IconWorld size="1.125rem"/><Text size="sm" ml={5}>{data.location}</Text></Center></Flex>
           {data.workDuration.map(workDuration => <WorkDurationText workDuration={workDuration} key={`${workDuration.title} ${workDuration.fromDate.year}`}/>)}
           <Box className="job-description" w='90%'>
             <JobDescriptions descriptions={data.descriptions}/>
           </Box>
           
-        </Box>
+        </Container>
     );
 }
 
