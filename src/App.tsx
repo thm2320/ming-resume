@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell, Header,Footer, MantineThemeOverride } from '@mantine/core';
+import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell, MantineThemeOverride } from '@mantine/core';
 import { useColorScheme } from '@mantine/hooks';
 import Profile from './components/Profile';
 
