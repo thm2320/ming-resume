@@ -11,6 +11,7 @@ FROM node:18-alpine as main
 ## important when we create local node modules in the container with npm install
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 RUN mkdir -p /home/node/app/node_modules/.vite && chmod -R 777 /home/node/app/node_modules/.vite
+RUN mkdir -p /home/node/app/node_modules/.vitest && chmod -R 777 /home/node/app/node_modules/.vitest
 
 ## set the working directory of the application to /home/node/app
 WORKDIR /home/node/app

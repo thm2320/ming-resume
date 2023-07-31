@@ -27,10 +27,10 @@ const AppHeader = () => {
     return (<Group sx={{ height: '100%' }} px={20} position="apart">
             <Text fw={700}>CV - Ada Yu</Text>
             <Center>
-            <ActionIcon variant="default" onClick={onPrintButtonClick} size={30}>
+            <ActionIcon aria-label="print" variant="default" onClick={onPrintButtonClick} size={30}>
               <IconPrinter color={colorScheme === 'dark' ?theme.colors.gray[0]:'black'} size="1.25rem" />
             </ActionIcon>
-            <ActionIcon ml='xs' variant="default" onClick={() => toggleColorScheme()} size={30}>
+            <ActionIcon ml='xs' aria-label="change-theme" variant="default" onClick={() => toggleColorScheme()} size={30}>
               {colorScheme === 'dark' ? <IconSun color={theme.colors.gray[0]} size="1.25rem" /> : <IconMoonStars size="1.25rem" />}
             </ActionIcon></Center>
           </Group>);

@@ -11,6 +11,7 @@
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#running-the-project">Running the project</a></li>
+    <li><a href="#testing-the-project">Testing the project</a></li>
     <li><a href="#deployment">Deployment</a></li>
   </ul>
 </details>
@@ -49,6 +50,22 @@ OR you can run it with docker:
 
 ```shell
 docker-compose up
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Testing the project
+
+The test will be performed using vitest.
+
+Run the following from root directory.
+```shell
+npm run test
+```
+
+Run with docker.
+```shell
+docker exec -it ayuyydev-cv npm run test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

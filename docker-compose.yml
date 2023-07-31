@@ -12,6 +12,9 @@ services:
       ## share the src folder,
       ## so the vite app can watch the changes from your local environment
       - ./src:/home/node/app/src
+      ## share the test folders
+      - ./test:/home/node/app/test
+      - ./coverage:/home/node/app/coverage
       ## prevent overriding of node modules from the local machine through Docker
       - web_node_modules:/home/node/app/node_modules
 volumes:
