@@ -45,6 +45,12 @@ Run the following at root directory:
 npm run dev
 ```
 
+OR you can run it with docker:
+
+```shell
+docker-compose up
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Deployment
