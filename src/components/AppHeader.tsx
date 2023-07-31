@@ -1,12 +1,13 @@
 import { IconSun, IconMoonStars } from '@tabler/icons-react';
-import { Group, ActionIcon, useMantineColorScheme, Text } from '@mantine/core';
+import { Group, ActionIcon, useMantineColorScheme, useMantineTheme, Text } from '@mantine/core';
 
 const AppHeader = () => {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+    const theme = useMantineTheme();
     return (<Group sx={{ height: '100%' }} px={20} position="apart">
-            <Text>CV - Ada Yu</Text>
+            <Text fw={700}>CV - Ada Yu</Text>
             <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
-              {colorScheme === 'dark' ? <IconSun color='violet' size="1rem" /> : <IconMoonStars size="1rem" />}
+              {colorScheme === 'dark' ? <IconSun color={theme.colors.gray[0]} size="1.25rem" /> : <IconMoonStars size="1.25rem" />}
             </ActionIcon>
           </Group>);
 }
