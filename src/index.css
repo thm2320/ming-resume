@@ -106,4 +106,8 @@ button:focus-visible {
       background-color:white!important;
       color:  #373A40!important;
     }
+
+    .mantine-Badge-root {
+      border-color: #dee2e6!important;
+    }
 }
