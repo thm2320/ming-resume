@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell, Header, MantineThemeOverride } from '@mantine/core';
-import { useHotkeys, useLocalStorage, useWindowEvent } from '@mantine/hooks';
+import { useHotkeys, useWindowEvent } from '@mantine/hooks';
 import Profile from './components/Profile';
 import AppHeader from './components/AppHeader';
 import { PrintContext } from './contexts/print';
@@ -44,25 +44,32 @@ const darkTheme: MantineThemeOverride = {
 };
 
 export default function Main() {
-  // hook will return either 'dark' or 'light' on client
-  // and always 'light' during ssr as window.matchMedia is not available
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: 'mantine-color-scheme',
-    defaultValue: undefined,
-    getInitialValueInEffect: true
-  });
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
-
-  useHotkeys([['mod+J', () => toggleColorScheme()]]);
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
+  const toggleColorScheme = (value?: ColorScheme) => {
+    if(value){
+      setColorScheme(value);
+      localStorage.setItem("mantine-color-scheme", value);
+    }else{
+      const toggledValue = colorScheme==='dark'?'light':'dark';
+      setColorScheme(toggledValue);
+      localStorage.setItem("mantine-color-scheme", toggledValue);
+    }
+  }
 
   useEffect(()=>{
-    if(colorScheme){
-      // only toggle the color scheme when color scheme is undefined, 
-      // otherwise it always use dark no matter what is in local storage
-      toggleColorScheme(colorScheme);
+    // do the theme check in useEffect once,
+    // since the mantine built in hooks useColorScheme and useLocalStorage cannot seem to work together
+    const theme = localStorage.getItem("mantine-color-scheme");
+    if(theme){
+      // use the theme in local storage as long as it exist
+      toggleColorScheme(theme as ColorScheme);
+    }else if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      // otherwise check on user preference
+      toggleColorScheme('dark');
     }
   },[]);
+
+  useHotkeys([['mod+J', () => toggleColorScheme()]]);
 
   const [isPrinting, setIsPrinting] = useState(false);
   useWindowEvent('beforeprint', ()=>setIsPrinting(true));
