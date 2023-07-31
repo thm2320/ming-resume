@@ -9,7 +9,6 @@ import SkillSection from './SkillSection';
 
 const Profile = () => {
     return (
-        <div>
             <Stack spacing="0">
                 <BasicInfoSection/>
                 <Divider mb="sm"/>
@@ -28,7 +27,6 @@ const Profile = () => {
                         </Stack></Container>
                 </Flex>
             </Stack>
-        </div>
     );
 }
 

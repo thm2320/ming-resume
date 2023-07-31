@@ -10,13 +10,12 @@ const App = () => {
       <AppShell
       fixed
       header={<Header height={60} p="xs"><AppHeader/></Header>}
-      padding="xs"
       styles={{
         main: {
-          height: "100%",
-        },
-        body: {
-          height: "100%",
+          paddingTop: "var(--mantine-header-height, 0px)", // remove padding from mantine main component
+          paddingBottom: "var(--mantine-footer-height, 0px)",
+          paddingLeft: "var(--mantine-navbar-width, 0px)",
+          paddingRight: "var(--mantine-aside-width, 0px)"
         },
       }}
       >
