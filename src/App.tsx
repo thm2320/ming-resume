@@ -27,7 +27,7 @@ const App = () => {
 
 const darkTheme: MantineThemeOverride = {
   colorScheme: 'dark',
-  white:'#000000',
+  white:'#000000', // override white to fix the timeline display in dark mode
   colors:{
     blue: ['#212529',//'#E7F5FF',
       '#D0EBFF',
@@ -57,8 +57,12 @@ export default function Main() {
   useHotkeys([['mod+J', () => toggleColorScheme()]]);
 
   useEffect(()=>{
-    toggleColorScheme(colorScheme);
-  },[])
+    if(colorScheme){
+      // only toggle the color scheme when color scheme is undefined, 
+      // otherwise it always use dark no matter what is in local storage
+      toggleColorScheme(colorScheme);
+    }
+  },[]);
 
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
