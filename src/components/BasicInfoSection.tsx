@@ -39,7 +39,7 @@ const BasicInfoSection = () => {
     useWindowEvent('beforeprint', ()=>setIsPrinting(true));
     useWindowEvent('afterprint', ()=>setIsPrinting(false));
     return (
-        <Box sx={(theme) => ({ backgroundColor: theme.colors.blue[4] })}>
+        <Box miw='xs' sx={(theme) => ({ backgroundColor: theme.colors.blue[4] })}>
         <Box m="md"><Flex gap={50}>
             {!isPrinting && <Box><AvatarSection/></Box>}
             <Box><BasicInfoText/></Box>
