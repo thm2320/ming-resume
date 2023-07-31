@@ -36,7 +36,7 @@ const BasicInfoSection = () => {
     return (
         <Box miw='xs' sx={(theme) => ({ backgroundColor: theme.colors.blue[4] })}>
         <Box m="md"><Flex gap={50}>
-            {!isPrinting && <Box><AvatarSection/></Box>}
+            <Box display={isPrinting?'none':'block'}><AvatarSection/></Box>
             <Box><BasicInfoText/></Box>
         </Flex></Box></Box>
     );
