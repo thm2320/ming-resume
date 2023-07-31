@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { Title, Text, Center, Avatar, HoverCard, Flex, Box, Stack } from '@mantine/core';
-import { useWindowEvent } from '@mantine/hooks';
 import { IconMail, IconBrandGithub, IconBrandLinkedin, IconMapPin, IconEPassport } from '@tabler/icons-react';
 import { basicInfo } from '../data';
-
-//<Avatar size={150} radius={150} src={null}><IconStar size={150} /></Avatar>
+import { usePrintContext } from '../contexts/print';
 
 const AvatarSection = () => {
     return (
@@ -35,9 +32,7 @@ const BasicInfoText = () => {
 }
 
 const BasicInfoSection = () => {
-    const [isPrinting, setIsPrinting] = useState(false);
-    useWindowEvent('beforeprint', ()=>setIsPrinting(true));
-    useWindowEvent('afterprint', ()=>setIsPrinting(false));
+    const {isPrinting} = usePrintContext();
     return (
         <Box miw='xs' sx={(theme) => ({ backgroundColor: theme.colors.blue[4] })}>
         <Box m="md"><Flex gap={50}>

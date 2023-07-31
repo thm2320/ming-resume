@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell, Header, MantineThemeOverride } from '@mantine/core';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import { useHotkeys, useLocalStorage, useWindowEvent } from '@mantine/hooks';
 import Profile from './components/Profile';
 import AppHeader from './components/AppHeader';
+import { PrintContext } from './contexts/print';
 
 
 const App = () => {
@@ -63,10 +64,16 @@ export default function Main() {
     }
   },[]);
 
+  const [isPrinting, setIsPrinting] = useState(false);
+  useWindowEvent('beforeprint', ()=>setIsPrinting(true));
+  useWindowEvent('afterprint', ()=>setIsPrinting(false));
+
   return (
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider theme={colorScheme === 'dark'?darkTheme:{colorScheme}} withGlobalStyles withNormalizeCSS>
+        <PrintContext.Provider value={{isPrinting, setIsPrinting}}>
         <App />
+        </PrintContext.Provider>
       </MantineProvider>
     </ColorSchemeProvider>
   );
