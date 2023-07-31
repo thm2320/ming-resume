@@ -92,4 +92,18 @@ button:focus-visible {
     main{
       padding:0!important;
     }
+
+    td{
+      border-color:#dee2e6!important;
+    }
+
+    .mantine-Timeline-item::before {
+      border-left-color: #dee2e6!important;
+    }
+
+    .mantine-Timeline-itemBullet{
+      border: 0.125rem solid #dee2e6!important;
+      background-color:white!important;
+      color:  #373A40!important;
+    }
 }
