@@ -1,14 +1,38 @@
-import { IconSun, IconMoonStars } from '@tabler/icons-react';
-import { Group, ActionIcon, useMantineColorScheme, useMantineTheme, Text } from '@mantine/core';
+import { useCallback } from 'react';
+import { IconSun, IconMoonStars, IconPrinter } from '@tabler/icons-react';
+import { Group, ActionIcon, useMantineColorScheme, useMantineTheme, Text, Center } from '@mantine/core';
+import { usePrintContext } from '../contexts/print';
 
 const AppHeader = () => {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
     const theme = useMantineTheme();
+    const { setIsPrinting } = usePrintContext();
+
+    const onPrintButtonClick = useCallback(()=>{
+      if(typeof setIsPrinting === 'function'){
+        setIsPrinting(true);
+      }
+      const timeout = setTimeout(()=>{
+        window.print();
+        if(typeof setIsPrinting === 'function'){
+          setIsPrinting(false);
+        }
+      },100);
+
+      return () => {
+        clearTimeout(timeout);
+      };
+    },[setIsPrinting]);
+
     return (<Group sx={{ height: '100%' }} px={20} position="apart">
             <Text fw={700}>CV - Ada Yu</Text>
-            <ActionIcon variant="default" onClick={() => toggleColorScheme()} size={30}>
-              {colorScheme === 'dark' ? <IconSun color={theme.colors.gray[0]} size="1.25rem" /> : <IconMoonStars size="1.25rem" />}
+            <Center>
+            <ActionIcon variant="default" onClick={onPrintButtonClick} size={30}>
+              <IconPrinter color={colorScheme === 'dark' ?theme.colors.gray[0]:'black'} size="1.25rem" />
             </ActionIcon>
+            <ActionIcon ml='xs' variant="default" onClick={() => toggleColorScheme()} size={30}>
+              {colorScheme === 'dark' ? <IconSun color={theme.colors.gray[0]} size="1.25rem" /> : <IconMoonStars size="1.25rem" />}
+            </ActionIcon></Center>
           </Group>);
 }
 
