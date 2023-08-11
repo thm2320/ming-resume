@@ -1,253 +1,249 @@
-import { JobExprience, WorkMode } from "./types/jobExperience.type";
-import { Language, LanguageLevel } from "./types/language.type";
-import { Award, AwardIcon } from "./types/award.type";
-import { BasicInfo } from "./types/basicInfo.type";
-import { Education } from "./types/education.type";
-import { Certificate } from "./types/certificate.type";
-import { Skills } from "./types/skill.type";
+import { JobExprience, WorkMode } from './types/jobExperience.type';
+import { Language, LanguageLevel } from './types/language.type';
+import { Award } from './types/award.type';
+import { BasicInfo } from './types/basicInfo.type';
+import { Education } from './types/education.type';
+import { Certificate } from './types/certificate.type';
+import { Skills } from './types/skill.type';
 
 const basicInfo: BasicInfo = {
-  name: "Ada, YU",
-  email: "adayyy.hk@gmail.com",
-  github: "ayuyydev",
-  linkedin: "ada-yu-20979865",
-  location: "North Greenwich, London, UK",
-  visaForUK: false,
+  name: 'Ming, Tsang',
+  email: 'mingtsang232@gmail.com',
+  github: 'thm2320',
+  linkedin: 'ming-tsang-aa5121126',
+  location: 'North Greenwich, London, UK',
+  visaInfo: 'Visa sponsorship Is Not Required to work in UK',
 };
 
 const education: Education[] = [
   {
-    title: "BSc (Hons) Computing with First Class Honor",
-    institute: "The Hong Kong Polytechnic University",
+    title: 'Master of Science in Information Technology',
+    institute: 'The Hong Kong University of Science and Technology',
+  },
+  {
+    title: 'Bachelor Degree of Computer Engineering',
+    institute: 'The Hong Kong University of Science and Technology',
   },
 ];
 
 const skills: Skills = {
+  Languages: ['Typescript', ' Javascript', ' Java', ' Groovy'],
   Frontend: [
-    "React.js",
-    "Nextjs",
-    "Single-Spa",
-    "Redux",
-    "Material-UI",
-    "Bootstrap",
-    "JQuery",
+    'React.js',
+    'Single-Spa',
+    'Redux',
+    'Nextjs',
+    'HTML5',
+    'CSS',
+    'Bootstrap',
+    'Material-UI',
+    'Graphql',
   ],
   Backend: [
-    "Typescript",
-    "Javascript",
-    "Node.js",
-    "Expressjs",
-    "Socket.io",
-    "GraphQL",
-    "Java",
-    "Spring MVC",
-    "Spring Boot",
-    "Grails/Groovy",
-    "Python",
+    'Nodejs',
+    'Expressjs',
+    'Socket.io',
+    'Nestjs',
+    'Spring MVC',
+    'Spring Boot',
+    'Grails',
+    'Graphql',
   ],
-  "Database/Cache": [
-    "PostgreSQL",
-    "Redis",
-    "SQL Server",
-    "MySQL",
-    "Mongodb",
-    "Oracle",
+  Database: [
+    'Postgresql',
+    'Dynamodb',
+    'Mongodb',
+    'SQL Server',
+    'Mysql',
+    'Oracle',
   ],
-  "Cloud Computng": ["AWS", "Docker", "Terraform", "Serverless"],
-  Testing: ["Jest", "Junit", "Cypress", "Supertest", "Mocha", "Chai"],
+  Testing: ['Jest', 'Junit', 'Supertest', 'Mocha', 'Chai'],
+  Containerization: ['Docker', 'Kubernetes'],
+  Cloud: [
+    'AWS',
+    'Vercel',
+    'Render',
+    'Heroku',
+    'Firebase',
+    'Digital Ocean ',
+    'Serverless',
+  ],
   Others: [
-    "Micro-services",
-    "Micro-frontend",
-    "CI/CD",
-    "Github Action",
-    "SonarQube",
+    'Micro-services',
+    'Micro-frontend',
+    'CI/CD',
+    'Github Action',
+    'NATS-streaming',
+    'Redis',
+    'Postman',
+    'Jmeter',
   ],
 };
 
 const certification: Certificate[] = [
   {
-    title: "AWS Cerfied Developer - Associate",
+    title: 'AWS Cerfied Developer - Associate',
     year: 2022,
     certificateUrl:
-      "https://www.credly.com/badges/1969d90a-3ac4-4fa5-a069-783f0101e40f/public_url",
-    institute: "Amazon Web Services Training and Certification",
-    instituteUrl: "https://aws.amazon.com/certification/",
+      'https://www.credly.com/badges/843c1f17-140e-48c5-ab58-7bb8b5960d38/linked_in?t=rmll7u',
+    institute: 'Amazon Web Services Training and Certification',
+    instituteUrl: 'https://aws.amazon.com/certification/',
   },
 ];
 
-const awards: Award[] = [
-  {
-    description:
-      "Most Innovative EPC/RFID Application (Silver Award) of Hong Kong U-21 RFID Awards 2011",
-    icon: AwardIcon.lightbulb,
-  },
-  {
-    description:
-      "Silver Award of the Community Outreach Merit Program 2010-2011",
-    icon: AwardIcon.trophy,
-  },
-  {
-    description:
-      "Computing Alumni Association Scholarship for Outstanding Service Learning 2010",
-    icon: AwardIcon.school,
-  },
-  {
-    description:
-      "Donald Knuth Subject Scholarship for Principles of Programming 2009/10",
-    icon: AwardIcon.school,
-  },
-];
+const awards: Award[] = [];
 
 const languages: Language[] = [
   {
-    name: "Cantonese",
+    name: 'Cantonese',
     level: LanguageLevel.MotherTongue,
   },
   {
-    name: "English",
+    name: 'English',
     level: LanguageLevel.Fluent,
   },
   {
-    name: "Mandarin",
-    level: LanguageLevel.Intermediate,
+    name: 'Mandarin',
+    level: LanguageLevel.Basic,
   },
 ];
 
 const myJobExp: JobExprience[] = [
   {
+    id: 'self_development',
     workDuration: [
       {
-        fromDate: { month: "MAY", year: 2019 },
-        toDate: { month: "MAR", year: 2023 },
+        fromDate: { year: 2023 },
         mode: WorkMode.FullTime,
-        title: "Senior Solutions Developer",
+        title: 'Self Development',
+        skillSet: [
+          'Typescript',
+          'Node.js',
+          'React.js',
+          'Nextjs',
+          'Socket.io',
+          'Jest',
+        ],
       },
     ],
-    companyName: "OTTO INTERNATIONAL LTD",
-    companyUrl: "https://ottoint.com/",
-    location: "Hong Kong",
-    descriptions: `* designed, developed and led a completely new project called **Virtual Product Platform** using NodeJS/Javascript, ReactJs, Redis hosted on AWS ECS and AWS Cloudfront with auto-scaling which serves around 80 global users daily, providing user a platform to review and manage their 3D development assets and products
-* designed, developed and led for the replacement project called **Access Control Management System (ACM)** using NodeJS/Javascript, ReactJs, Material-UI, Redis hosted on AWS ECS and AWS Cloudfront with auto-scaling, which helps users manage their permissions and roles in different systems. It serves around 200-300 internal users daily
-* designed, developed and led for the replacement project called **Data Maintenance System (DM)** using NodeJS/Javascript, ReactJs, Material-UI, Redis hosted on AWS ECS and AWS Cloudfront with auto-scaling which serves around 50 internal users daily. It is used by internal users to maintain data dynamically used in 3-4 of our existing systems
-* designed, developed and led a completely new project called **Idea Collection** using Java, SpringBoot, AWS API Gateway, AWS ECS, ReactJs serving around 10 users daily, which allows users to review, comment and manage their ideas for product development in the platform
-* suggested, designed and developed a **Customer Help Support System** using NodeJS/Javascript, ReactJs which allows internal user to dynamically update the format of the help forms which facilitates collecting user feedback in a formatted way and creating ticket in our Jira System automatically, serving more than 50 users daily
-* designed and developed **Email sending microservice** using NodeJS / Typescript, AWS Lambda, AWS SQS and AWS SES which serves more than 300 users daily for sending emails with large attachments (more than 100MB)
-* designed and developed **Thumbnail generation microservice** using NodeJS, AWS Lambda with AWS S3 which handles more than 150 images daily
-* designed and developed **Browzwear plugins** using Python and ReactJs which could integrate with the Virtual Product Platform, serving more than 30 customers
-* maintained and developed features on **Product Life Management System** using Redis, Grails/Groovy, GSP and Bootstrap and jQuery, which serves in total 500 users globally, allowing users to manage their product development cycle in the platform including sourcing the materials and how the products are shipped
-* designed and developed POCs using Single-SPA framework to facilitate integration of the Product Life Management with 2-3 customer portals
-* setup CI/CD for deployment on AWS cloud with terraform, Jenkins and Github action for microservices, Node.js backend and ReactJs frontend
-* helped on transitioning 2-3 existing old projects to AWS Cloud using Docker and Terraform
-* analysed requirements from 2-3 Product Managers, written guidelines and distributed tasks to 3-4 colleagues, and follow up with their career development
-* performed regular code review and provide suggestions/improvements to 8-10 colleagues
-* managed and maintained the Github repositories including writing documentations, assigning permissions for the whole team (around 20 developers), and assigning the corresponding code reviewers to the projects`,
+    location: 'London',
+    descriptions: `* Applied online course to learn devops and AWS cloud service
+* Self practising with different kind of AWS cloud services
+* Gain certification in 'AWS Certified Developer – Associate'
+* Worked on personal projects with stack: Typescript, Node.js, React.js, Nextjs, Socket.io, Jest
+* Relocated from Hong Kong to London in April, 2023
+    `,
   },
   {
+    id: 'fml',
     workDuration: [
       {
-        fromDate: { month: "JUN", year: 2013 },
-        toDate: { month: "MAY", year: 2019 },
+        fromDate: { year: 2021 },
+        toDate: { year: 2022 },
         mode: WorkMode.FullTime,
-        title: "Senior Software Engineer",
+        title: 'Software Engineer',
+        skillSet: [
+          'AWS',
+          'Serverless Framework',
+          'Typescript',
+          'Node.js',
+          'React.js',
+          'Single-SPA',
+          'Postgresql',
+          'Oracle',
+          'Dynamodb',
+          'Jest',
+        ],
       },
     ],
-    companyName: "MOBIGATOR TECHNOLOGY GROUP LTD",
-    companyUrl: "https://www.mobigator.com/",
-    location: "Hong Kong",
-    descriptions: `* analysed, written guidelines and distributed tasks to 2-3 colleagues, and follow up with their progress
-* implemented automated build and deploy script using batch script for deploying monolithic Java application which is used in production
-* developed and maintained **Hospital Management System** and **Clinic Management System** in Grails/Groovy, SQL, HTML, CSS, Javascript, Ajax and GSP for 5-10 clinic and hospitals which has around 200 users on each instance daily, allowing the hospital/clinic to manage their bookings and patient health records online
-* designed and written schedule jobs for batch tasks including sending notifications to users with email and SMS, and also report generation for 5-10 clinics and hospitals
-* designed, documented and execute test cases manually for each project
-* implemented data migration and check script for each deployment
-* written requirement specification, design specification and work progress reports
-* searched, filtered and exported log records, analysed and written reports concerning the log records
-* communicated with customers to solve customer enquiries`,
+    companyName: 'Fleet Management Limited',
+    companyUrl: 'https://www.fleetship.com/',
+    location: 'Hong Kong',
+    descriptions: `
+* Successfully transform one of a big module from a monolithic legacy system to a new microservice module. It improved users’ workflow as it has better UI design and new features. Also, it becomes easily scalable and extensible due to the microservice architecture.
+* In charge of important integration between our company’s main system and third party system, which becomes a new business service. It helped the company gain more business chances.
+* Design and build a scalable and customizable solution which can automatically monitor data out of sync problems between old and new systems. It helped our maintenance team reduce workload.
+* Supervise and manage a remote developers team located globally. Mentor the team and provide code review and suggestions/improvements to ensure the team can work smoothly.
+* Main stack used: AWS, Serverless Framework, Typescript, Node.js, React.js, Single-SPA, Postgresql, Oracle, Dynamodb, Jest
+    `,
   },
   {
+    id: 'freelance',
     workDuration: [
       {
-        fromDate: { month: "SEP", year: 2012 },
-        toDate: { month: "OCT", year: 2013 },
+        fromDate: { year: 2020 },
+        toDate: { year: 2021 },
         mode: WorkMode.PartTime,
-        title: "Java Developer",
+        title: 'Freelance',
+        skillSet: ['React.js', 'Typescript', 'Sass'],
       },
+    ],
+    location: 'Hong Kong',
+    descriptions: `
+* Helped updating the company retail website for different sales events
+* Main stacked used: Reactjs, Typescript and Sass`,
+  },
+  {
+    id: 'mtg',
+    workDuration: [
       {
-        fromDate: { month: "AUG", year: 2011 },
-        toDate: { month: "AUG", year: 2011 },
+        fromDate: { year: 2019 },
+        toDate: { year: 2020 },
         mode: WorkMode.FullTime,
-        title: "Java Developer",
+        title: 'System Analyst',
+        skillSet: [
+          'ReactJs',
+          'Java',
+          'Grails',
+          'SQL Server',
+          'Mongodb',
+          'ExtJs',
+        ],
+        descriptions: `
+* In charge of several modules and sub systems, transforming some out-dated systems into new ones with modern technologies so that they will be easily extensible.
+* Help to identify performance issues on company main products by research and apply a load test tool on the company system. 
+* Improve user experiences by designing and implementing new features according to user requirements
+* Cooperate with other module owners/3rd party for integration. Make the system more flexible and easier to provide different solutions to clients.
+* Main stack: ReactJs, Java, Grails, SQL Server, Mongodb, ExtJs
+    `,
       },
-    ],
-    companyName: "INSPERA AS",
-    companyUrl: "https://www.inspera.com/",
-    location: "Norway",
-    descriptions: `* developed and maintained **Assessment Management System** in Java, HTML, CSS, Javascript, JSP, jquery, Ajax and XSL which helps users manage their assessments for their students in more than 50 educational  institutions globally
-* communicated with 10-12 customers to solve customer enquiries in the Jira system which provide users first level system support and solve their issues as promptly as possible`,
-  },
-  {
-    workDuration: [
       {
-        fromDate: { month: "JAN", year: 2011 },
-        toDate: { month: "MAR", year: 2011 },
-        mode: WorkMode.PartTime,
-        title: "Student helper",
-      },
-      {
-        fromDate: { month: "SEP", year: 2010 },
-        toDate: { month: "NOV", year: 2010 },
-        mode: WorkMode.PartTime,
-        title: "Student helper",
-      },
-    ],
-    companyName:
-      "THE HONG KONG POLYTECHNIC UNIVERSITY, DEPT OF COMPUTING, ENG236 COMPUTER PROGRAMMING",
-    location: "Hong Kong",
-    descriptions: `* assisted in teaching 100 students in programming in C++ and invigilated in mid-term test involving 100 students`,
-  },
-  {
-    workDuration: [
-      {
-        fromDate: { month: "JUN", year: 2010 },
-        toDate: { month: "AUG", year: 2010 },
+        fromDate: { year: 2016 },
+        toDate: { year: 2019 },
         mode: WorkMode.FullTime,
-        title: "Student helper",
+        title: 'Senior Software Engineer',
+        skillSet: [
+          'ReactJs',
+          'Java',
+          'Grails',
+          'SQL Server',
+          'Mongodb',
+          'ExtJs',
+        ],
+        descriptions: `
+* Develop a reusable charting web app that can plug into different systems. The charting system helps our company to gain more business opportunities.
+* Improve user experiences by designing and implementing new features according to user requirements.
+* Help users solving technical problems
+* Participate in important release deployment to ensure the process is smooth.
+* Main stack: ReactJs, Java, Grails, SQL Server, Mongodb, ExtJs  
+    `,
       },
-    ],
-    companyName:
-      "THE HONG KONG POLYTECHNIC UNIVERSITY, DEPT OF COMPUTING, COMP - I3LEARN GROUP",
-    location: "Hong Kong",
-    descriptions: `* contacted 300 parents concerning information about 6 summer camps related to robotic programming
-* wrote notes and sample programs for 6 summer camps using Robolab and i*CATch toolbox software
-* arranged schedule of 25 student helpers and summarised survey data of 13 summer camps`,
-  },
-  {
-    workDuration: [
       {
-        fromDate: { month: "JUN", year: 2010 },
-        toDate: { month: "JUN", year: 2010 },
-        mode: WorkMode.PartTime,
-        title: "Student helper",
+        fromDate: { year: 2012 },
+        toDate: { year: 2016 },
+        mode: WorkMode.FullTime,
+        title: 'Software Engineer',
+        skillSet: ['Java', 'Grails', 'SQL Server', 'Mongodb', 'ExtJs'],
+        descriptions: `
+* Worked on Hong Kong Government Project which is important to public health
+* Helped Project manager and supervisors to maintain and develop company main product
+* Main stack: Java, Grails, SQL Server, Mongodb, ExtJs
+    `,
       },
     ],
-    companyName:
-      "THE HONG KONG POLYTECHNIC UNIVERSITY, FACULTY OF HEALTH AND SOCIAL SCIENCES, ELDERLY MINI-U PROGRAMME 2010",
-    location: "Hong Kong",
-    descriptions: `* prepared notes and taught 40 elderlies for the 5-day advanced computer class`,
-  },
-  {
-    workDuration: [
-      {
-        fromDate: { month: "JUL", year: 2007 },
-        toDate: { month: "SEP", year: 2007 },
-        mode: WorkMode.PartTime,
-        title: "Website designer",
-      },
-    ],
-    companyName: "WEB-DESIGNER. LTD",
-    location: "Hong Kong",
-    descriptions: `* contacted with 7-8 customers as regular follow up
-* designed logos and websites, uploaded and modified websites according to the needs of more than 10 customers`,
+    companyName: 'Mobigator Technology Group',
+    companyUrl: 'https://www.mobigator.com/pages/index.asp',
+    location: 'Hong Kong',
   },
 ];
 
