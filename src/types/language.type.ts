@@ -1,10 +1,11 @@
 export interface Language {
-    name: string;
-    level: LanguageLevel;
-};
+  name: string;
+  level: LanguageLevel;
+}
 
 export enum LanguageLevel {
-    MotherTongue = "Mother Tongue",
-    Fluent = "Fluent",
-    Intermediate = "Intermediate"
-};
+  MotherTongue = 'Mother Tongue',
+  Fluent = 'Fluent',
+  Intermediate = 'Intermediate',
+  Basic = 'Basic',
+}
