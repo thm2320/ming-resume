@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+// import { useState, useCallback } from 'react';
 import {
   Timeline,
   Text,
@@ -141,7 +141,7 @@ const JobSection = () => {
         bulletSize={24}
         lineWidth={2}
       >
-        {myJobExp.map((item: JobExprience, idx: number) => {
+        {myJobExp.map((item: JobExprience) => {
           const { hovered, ref } = useHover();
           // const onHover = useCallback(() => {
           //   setCurrentActive(idx + 1);
