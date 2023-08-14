@@ -9,8 +9,8 @@ import { Skills } from './types/skill.type';
 const basicInfo: BasicInfo = {
   name: 'Ming, Tsang',
   email: 'mingtsang232@gmail.com',
-  github: 'thm2320',
-  linkedin: 'ming-tsang-aa5121126',
+  github: 'https://github.com/thm2320',
+  linkedin: 'https://www.linkedin.com/in/ming-tsang-aa5121126/',
   location: 'North Greenwich, London, UK',
   visaInfo: 'Visa sponsorship Is Not Required to work in UK',
 };
@@ -127,11 +127,12 @@ const myJobExp: JobExprience[] = [
       },
     ],
     location: 'London',
-    descriptions: `* Applied online course to learn devops and AWS cloud service
-* Self practising with different kind of AWS cloud services
-* Gain certification in 'AWS Certified Developer – Associate'
-* Worked on personal projects with stack: Typescript, Node.js, React.js, Nextjs, Socket.io, Jest
-* Relocated from Hong Kong to London in April, 2023
+    descriptions: `
+* Completed an online devops and AWS cloud service course to expand skill set
+* Actively engaged in self-practice with various AWS cloud services to enhance proficiency
+* Successfully obtained certification as 'AWS Certified Developer - Associate'
+* Relocated from Hong Kong to London for career growth opportunities
+* Independently worked on personal projects utilizing a diverse tech stack including Typescript, Node.js, React.js, Nextjs, Socket.io, and Jest.
     `,
   },
   {
@@ -160,29 +161,28 @@ const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* Successfully transform one of a big module from a monolithic legacy system to a new microservice module. It improved users’ workflow as it has better UI design and new features. Also, it becomes easily scalable and extensible due to the microservice architecture.
-* In charge of important integration between our company’s main system and third party system, which becomes a new business service. It helped the company gain more business chances.
-* Design and build a scalable and customizable solution which can automatically monitor data out of sync problems between old and new systems. It helped our maintenance team reduce workload.
-* Supervise and manage a remote developers team located globally. Mentor the team and provide code review and suggestions/improvements to ensure the team can work smoothly.
-* Main stack used: AWS, Serverless Framework, Typescript, Node.js, React.js, Single-SPA, Postgresql, Oracle, Dynamodb, Jest
-    `,
+* Successfully modernized a major module from a monolithic legacy system to a scalable and extensible microservice architecture. This transformation improved workflow, user experience, and added new features.
+* Led integration efforts between our company's main system and a third party system, creating a valuable business service that increased opportunities for the company.
+* Developed a automated monitoring solution to identify and resolve data synchronization issues between old and new systems, reducing maintenance workload for the team.
+* Managed and mentored a diverse global remote development team, providing code reviews and guidance to ensure smooth collaboration and high-quality work.
+`,
   },
-  {
-    id: 'freelance',
-    workDuration: [
-      {
-        fromDate: { year: 2020 },
-        toDate: { year: 2021 },
-        mode: WorkMode.PartTime,
-        title: 'Freelance',
-        skillSet: ['React.js', 'Typescript', 'Sass'],
-      },
-    ],
-    location: 'Hong Kong',
-    descriptions: `
-* Helped updating the company retail website for different sales events
-* Main stacked used: Reactjs, Typescript and Sass`,
-  },
+  //   {
+  //     id: 'freelance',
+  //     workDuration: [
+  //       {
+  //         fromDate: { year: 2020 },
+  //         toDate: { year: 2021 },
+  //         mode: WorkMode.PartTime,
+  //         title: 'Freelance',
+  //         skillSet: ['React.js', 'Typescript', 'Sass'],
+  //       },
+  //     ],
+  //     location: 'Hong Kong',
+  //     descriptions: `
+  // * Helped updating the company retail website for different sales events
+  // * Main stacked used: Reactjs, Typescript and Sass`,
+  //   },
   {
     id: 'mtg',
     workDuration: [
@@ -200,16 +200,15 @@ const myJobExp: JobExprience[] = [
           'ExtJs',
         ],
         descriptions: `
-* In charge of several modules and sub systems, transforming some out-dated systems into new ones with modern technologies so that they will be easily extensible.
-* Help to identify performance issues on company main products by research and apply a load test tool on the company system. 
-* Improve user experiences by designing and implementing new features according to user requirements
-* Cooperate with other module owners/3rd party for integration. Make the system more flexible and easier to provide different solutions to clients.
-* Main stack: ReactJs, Java, Grails, SQL Server, Mongodb, ExtJs
-    `,
+* Led the successful transformation of multiple outdated systems into modern, easily extensible ones through the application of cutting-edge technologies.
+* Identified and resolved performance issues on key company products by conducting thorough research and implementing load testing tools.
+* Enhanced user experiences by designing and implementing innovative features based on extensive user requirements analysis.
+* Collaborated with module owners and third-party providers to ensure seamless integration, resulting in a more flexible system capable of delivering tailored solutions to clients.
+`,
       },
       {
         fromDate: { year: 2016 },
-        toDate: { year: 2019 },
+        toDate: { year: 2018 },
         mode: WorkMode.FullTime,
         title: 'Senior Software Engineer',
         skillSet: [
@@ -230,7 +229,7 @@ const myJobExp: JobExprience[] = [
       },
       {
         fromDate: { year: 2012 },
-        toDate: { year: 2016 },
+        toDate: { year: 2015 },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         skillSet: ['Java', 'Grails', 'SQL Server', 'Mongodb', 'ExtJs'],
