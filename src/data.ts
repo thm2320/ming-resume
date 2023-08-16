@@ -7,12 +7,12 @@ import { Certificate } from './types/certificate.type';
 import { Skills } from './types/skill.type';
 
 const basicInfo: BasicInfo = {
-  name: 'Ming, Tsang',
+  name: 'Ho Ming, Tsang',
   email: 'mingtsang232@gmail.com',
   github: 'https://github.com/thm2320',
   linkedin: 'https://www.linkedin.com/in/ming-tsang-aa5121126/',
   location: 'North Greenwich, London, UK',
-  visaInfo: 'Visa sponsorship Is Not Required to work in UK',
+  visaInfo: 'Have a BNO Visa and eligible to work in UK',
 };
 
 const education: Education[] = [
@@ -115,7 +115,7 @@ const myJobExp: JobExprience[] = [
       {
         fromDate: { year: 2023 },
         mode: WorkMode.FullTime,
-        title: 'Self Development',
+        title: 'Relocation & Self Development',
         skillSet: [
           'Typescript',
           'Node.js',
@@ -128,10 +128,10 @@ const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
+* Relocated from Hong Kong to London for career growth opportunities
 * Completed an online devops and AWS cloud service course to expand skill set
 * Actively engaged in self-practice with various AWS cloud services to enhance proficiency
 * Successfully obtained certification as 'AWS Certified Developer - Associate'
-* Relocated from Hong Kong to London for career growth opportunities
 * Independently worked on personal projects utilizing a diverse tech stack including Typescript, Node.js, React.js, Nextjs, Socket.io, and Jest.
     `,
   },

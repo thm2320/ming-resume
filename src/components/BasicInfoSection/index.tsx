@@ -5,6 +5,7 @@ import {
   IconBrandLinkedin,
   IconMapPin,
   IconEPassport,
+  IconPhone,
 } from '@tabler/icons-react';
 import { basicInfo } from '../../data';
 // import { usePrintContext } from '../../contexts/print';
@@ -42,6 +43,9 @@ const BasicInfoText = () => {
         url={`mailto:${basicInfo.email}`}
         text={basicInfo.email}
       />
+      {basicInfo.phone && (
+        <TextWithIcon icon={<IconPhone />} text={basicInfo.phone} />
+      )}
       {basicInfo.github && (
         <TextWithIcon
           icon={<IconBrandGithub />}
