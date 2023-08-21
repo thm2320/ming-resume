@@ -6,6 +6,7 @@ import BasicInfoSection from './BasicInfoSection';
 import EducationSection from './EducationSection';
 import CertificationSection from './CertificationSection';
 import SkillSection from './SkillSection';
+import IntroSection from './IntroSection';
 
 const Profile = () => {
   return (
@@ -19,7 +20,10 @@ const Profile = () => {
         direction={{ base: 'column', md: 'row' }}
         justify={{ sm: 'left' }}
       >
-        <JobSection />
+        <Container>
+          <IntroSection />
+          <JobSection />
+        </Container>
         <Container miw={500}>
           <Stack spacing="xs">
             <CertificationSection />

@@ -15,6 +15,13 @@ const basicInfo: BasicInfo = {
   visaInfo: 'Have a BNO Visa and eligible to work in UK',
 };
 
+export const introInfo = `
+I was born in Hong Kong and worked as a Software Engineer there for 9 years.  
+I have a BNO Visa which allows me to live and work in UK.  
+Recently relocated to London to live with my wife who is British citizen.  
+Since I planned to settle down in UK, I will extend the Visa by myself with/without sponsorship.
+`;
+
 const education: Education[] = [
   {
     title: 'Master of Science in Information Technology',
