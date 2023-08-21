@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Title } from '@mantine/core';
+import { Flex, Box, Title } from '@mantine/core';
 import { introInfo } from '../../data';
 import ReactMarkdown from 'react-markdown';
 
