@@ -9,6 +9,7 @@ import { Skills } from './types/skill.type';
 const basicInfo: BasicInfo = {
   name: 'Ho Ming, Tsang',
   email: 'mingtsang232@gmail.com',
+  phone: '+44 7737 295484',
   github: 'https://github.com/thm2320',
   linkedin: 'https://www.linkedin.com/in/ming-tsang-aa5121126/',
   location: 'North Greenwich, London, UK',
@@ -89,7 +90,7 @@ const skills: Skills = {
 
 const certification: Certificate[] = [
   {
-    title: 'AWS Cerfied Developer - Associate',
+    title: 'AWS Certified Developer - Associate',
     year: 2022,
     certificateUrl:
       'https://www.credly.com/badges/843c1f17-140e-48c5-ab58-7bb8b5960d38/linked_in?t=rmll7u',
@@ -117,10 +118,53 @@ const languages: Language[] = [
 
 const myJobExp: JobExprience[] = [
   {
+    id: 'stanleygibbons',
+    companyName: 'Stanley Gibbons Baldwins',
+    companyUrl: 'https://www.stanleygibbons.com/',
+    workDuration: [
+      {
+        fromDate: { year: 2023, month: 'September' },
+        mode: WorkMode.FullTime,
+        title: 'Software engineer',
+        skillSet: [
+          'AWS',
+          'SST',
+          'Serverless Framework',
+          'Typescript',
+          'Node.js',
+          'React.js',
+          'Nextjs',
+          'Nestjs',
+          'Postgresql',
+          'Jest',
+          'Vitest',
+        ],
+      },
+    ],
+    location: 'London',
+    descriptions: `
+* Built the online Auction Website https://sgbaldwins.com/en-GB in 2 months, customers can join the Auction online which is one of the main income of the company
+    - Implemented the Frontend with Nextjs
+    - Built the Backend structure using AWS lambda and integrate with 3rd party Auction management system
+* Designed and built Central Data Service (CDS), which centralise all customers, invoices data from different retails website and integrate with BI tool and different internal systems
+    - Design and built the pipelines how to pull data from different data sources 
+      - Mainly using AWS SQS, SNS, Step function, Lambda
+    - Implement api for integration with other internal system
+      - Mainly using AWS ECS, nestjs
+* Built Stampedia which is a stamp database which have new designed schema for migrating data from legacy system and also provide api as service
+    - Migrate stamps data
+    - Built stamp search api
+    - Tune the performances of the apis
+* Built Collector Hub https://collector-hub.stanleygibbons.com/ which is a stamp retail website. User can update the collected stamps and add stamps into their wishlist. They can also buy stamps which is planned as the next phase
+    - Mainly integrate it with the CDS api to update user wishlist and collected items
+    `,
+  },
+  {
     id: 'self_development',
     workDuration: [
       {
-        fromDate: { year: 2023 },
+        fromDate: { year: 2022, month: 'July' },
+        toDate: { year: 2023, month: 'Aug' },
         mode: WorkMode.FullTime,
         title: 'Relocation & Self Development',
         skillSet: [
@@ -135,7 +179,7 @@ const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* Relocated from Hong Kong to London for career growth opportunities
+* Relocated from Hong Kong to London for career growth opportunities in 2023 April
 * Completed an online devops and AWS cloud service course to expand skill set
 * Actively engaged in self-practice with various AWS cloud services to enhance proficiency
 * Successfully obtained certification as 'AWS Certified Developer - Associate'
@@ -146,8 +190,8 @@ const myJobExp: JobExprience[] = [
     id: 'fml',
     workDuration: [
       {
-        fromDate: { year: 2021 },
-        toDate: { year: 2022 },
+        fromDate: { year: 2021, month: 'Apr' },
+        toDate: { year: 2022, month: 'Jun' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         skillSet: [
@@ -174,28 +218,28 @@ const myJobExp: JobExprience[] = [
 * Managed and mentored a diverse global remote development team, providing code reviews and guidance to ensure smooth collaboration and high-quality work.
 `,
   },
-  //   {
-  //     id: 'freelance',
-  //     workDuration: [
-  //       {
-  //         fromDate: { year: 2020 },
-  //         toDate: { year: 2021 },
-  //         mode: WorkMode.PartTime,
-  //         title: 'Freelance',
-  //         skillSet: ['React.js', 'Typescript', 'Sass'],
-  //       },
-  //     ],
-  //     location: 'Hong Kong',
-  //     descriptions: `
-  // * Helped updating the company retail website for different sales events
-  // * Main stacked used: Reactjs, Typescript and Sass`,
-  //   },
+  {
+    id: 'freelance',
+    workDuration: [
+      {
+        fromDate: { year: 2020, month: 'Jul' },
+        toDate: { year: 2021, month: 'Mar' },
+        mode: WorkMode.PartTime,
+        title: 'Freelance',
+        skillSet: ['React.js', 'Typescript', 'Sass'],
+      },
+    ],
+    location: 'Hong Kong',
+    descriptions: `
+  * Helped updating the company retail website for different sales events
+  * Main stacked used: Reactjs, Typescript and Sass`,
+  },
   {
     id: 'mtg',
     workDuration: [
       {
-        fromDate: { year: 2019 },
-        toDate: { year: 2020 },
+        fromDate: { year: 2019, month: 'Oct' },
+        toDate: { year: 2020, month: 'Jul' },
         mode: WorkMode.FullTime,
         title: 'System Analyst',
         skillSet: [
@@ -214,8 +258,8 @@ const myJobExp: JobExprience[] = [
 `,
       },
       {
-        fromDate: { year: 2016 },
-        toDate: { year: 2018 },
+        fromDate: { year: 2016, month: 'Dec' },
+        toDate: { year: 2018, month: 'Oct' },
         mode: WorkMode.FullTime,
         title: 'Senior Software Engineer',
         skillSet: [
@@ -235,8 +279,8 @@ const myJobExp: JobExprience[] = [
     `,
       },
       {
-        fromDate: { year: 2012 },
-        toDate: { year: 2015 },
+        fromDate: { year: 2012, month: 'Spe' },
+        toDate: { year: 2016, month: 'Nov' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         skillSet: ['Java', 'Grails', 'SQL Server', 'Mongodb', 'ExtJs'],
