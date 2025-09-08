@@ -143,21 +143,13 @@ const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* Built the online Auction Website https://sgbaldwins.com/en-GB in 2 months, customers can join the Auction online which is one of the main income of the company
-    - Implemented the Frontend with Nextjs
-    - Built the Backend structure using AWS lambda and integrate with 3rd party Auction management system
-* Designed and built Central Data Service (CDS), which centralise all customers, invoices data from different retails website and integrate with BI tool and different internal systems
-    - Design and built the pipelines how to pull data from different data sources 
-      - Mainly using AWS SQS, SNS, Step function, Lambda
-    - Implement api for integration with other internal system
-      - Mainly using AWS ECS, nestjs
-* Built Stampedia which is a stamp database which have new designed schema for migrating data from legacy system and also provide api as service
-    - Migrate stamps data
-    - Built stamp search api
-    - Tune the performances of the apis
-* Built Collector Hub https://collector-hub.stanleygibbons.com/ which is a stamp retail website. User can update the collected stamps and add stamps into their wishlist. They can also buy stamps which is planned as the next phase
-    - Mainly integrate it with the CDS api to update user wishlist and collected items
-    `,
+* Spearheaded the end-to-end development of the company's primary online auction platform (sgbaldwins.com), delivering a critical new revenue stream from concept to launch in just 2 months.
+* Architected and engineered the Central Data Service (CDS), a foundational platform to centralize customer and invoice data from multiple e-commerce websites into a single source of truth.
+* Implemented robust, event-driven data ingestion pipelines using AWS SQS, SNS, Step Functions, and Lambda to power the CDS, enabling integration with BI tools and internal systems.
+* Designed and deployed a secure, containerized API layer for the CDS using NestJS on AWS ECS, providing unified and reliable data access across the organization.
+* Led the development of 'Stampedia', a specialized stamp database, by designing a new, modernized schema and successfully migrating extensive data from a complex legacy system.
+* Built and performance-tuned a high-availability search API for Stampedia, dramatically improving data retrieval speeds and providing the data backbone for other services.
+   `,
   },
   {
     id: 'self_development',
@@ -232,7 +224,7 @@ const myJobExp: JobExprience[] = [
     location: 'Hong Kong',
     descriptions: `
   * Helped updating the company retail website for different sales events
-  * Main stacked used: Reactjs, Typescript and Sass`,
+`,
   },
   {
     id: 'mtg',
@@ -275,7 +267,6 @@ const myJobExp: JobExprience[] = [
 * Improve user experiences by designing and implementing new features according to user requirements.
 * Help users solving technical problems
 * Participate in important release deployment to ensure the process is smooth.
-* Main stack: ReactJs, Java, Grails, SQL Server, Mongodb, ExtJs  
     `,
       },
       {
@@ -287,7 +278,6 @@ const myJobExp: JobExprience[] = [
         descriptions: `
 * Worked on Hong Kong Government Project which is important to public health
 * Helped Project manager and supervisors to maintain and develop company main product
-* Main stack: Java, Grails, SQL Server, Mongodb, ExtJs
     `,
       },
     ],
