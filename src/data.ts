@@ -119,7 +119,7 @@ const languages: Language[] = [
 const myJobExp: JobExprience[] = [
   {
     id: 'stanleygibbons',
-    companyName: 'Stanley Gibbons Baldwins',
+    companyName: 'Stanley Gibbons Baldwins Limited',
     companyUrl: 'https://www.stanleygibbons.com/',
     workDuration: [
       {
