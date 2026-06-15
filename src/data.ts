@@ -156,6 +156,7 @@ const myJobExp: JobExprience[] = [
 * Expedited the migration of legacy agency stamp data to 'Stampedia,' rapidly delivering an accurate and reliable data foundation for the new website.
 * Refactored infrastructure for the new website (https://collector-hub.stanleygibbons.com/), seamlessly integrating stamp catalogs with user collection data to accelerate feature development.
 * Championed AWS Lambda adoption for API development, reducing infrastructure overhead, simplifying maintenance, and significantly lowering operational costs.
+* Acted as a technical mentor for junior team members and spearheaded the onboarding of new joiners to ensure alignment with engineering best practices.
    `,
   },
   {
