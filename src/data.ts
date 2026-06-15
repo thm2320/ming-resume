@@ -17,10 +17,11 @@ const basicInfo: BasicInfo = {
 };
 
 export const introInfo = `
-I was born in Hong Kong and worked as a Software Engineer there for 9 years.  
-I have a BNO Visa which allows me to live and work in UK.  
-Recently relocated to London to live with my wife who is British citizen.  
-Since I planned to settle down in UK, I will extend the Visa by myself with/without sponsorship.
+Accomplished Software Engineer with 12 years of experience, including 9 years in Hong Kong  
+and the past 3 years successfully delivering technical solutions within the UK market.  
+Recently relocated to London to permanently settle with my spouse (a British citizen).  
+Hold a valid BNO Visa with full, unrestricted right to work in the UK,  
+and am fully committed to independently managing all future visa extensions without requiring company sponsorship.
 `;
 
 const education: Education[] = [
