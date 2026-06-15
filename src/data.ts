@@ -129,12 +129,15 @@ const myJobExp: JobExprience[] = [
         skillSet: [
           'AWS',
           'SST',
+          'CDK',
+          'Pulumi',
           'Serverless Framework',
           'Typescript',
           'Node.js',
           'React.js',
           'Nextjs',
           'Nestjs',
+          'Docker',
           'Postgresql',
           'Jest',
           'Vitest',
@@ -149,6 +152,8 @@ const myJobExp: JobExprience[] = [
 * Designed and deployed a secure, containerized API layer for the CDS using NestJS on AWS ECS, providing unified and reliable data access across the organization.
 * Led the development of 'Stampedia', a specialized stamp database, by designing a new, modernized schema and successfully migrating extensive data from a complex legacy system.
 * Built and performance-tuned a high-availability search API for Stampedia, dramatically improving data retrieval speeds and providing the data backbone for other services.
+* Refactored infrastructure for the new website (https://collector-hub.stanleygibbons.com/), seamlessly integrating stamp catalogs with user collection data to accelerate feature development.
+* Championed AWS Lambda adoption for API development, reducing infrastructure overhead, simplifying maintenance, and significantly lowering operational costs.
    `,
   },
   {
