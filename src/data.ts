@@ -77,6 +77,12 @@ const skills: Skills = {
     'Digital Ocean ',
     'Serverless',
   ],
+  AI: [
+    'Cursor',
+    'Claude',
+    'Gemini',
+    'ChatGPT',
+  ],
   Others: [
     'Micro-services',
     'Micro-frontend',
@@ -142,6 +148,8 @@ const myJobExp: JobExprience[] = [
           'Postgresql',
           'Jest',
           'Vitest',
+          'Cursor',
+          'Claude',
         ],
       },
     ],
@@ -156,6 +164,8 @@ const myJobExp: JobExprience[] = [
 * Expedited the migration of legacy agency stamp data to 'Stampedia,' rapidly delivering an accurate and reliable data foundation for the new website.
 * Refactored infrastructure for the new website (https://collector-hub.stanleygibbons.com/), seamlessly integrating stamp catalogs with user collection data to accelerate feature development.
 * Championed AWS Lambda adoption for API development, reducing infrastructure overhead, simplifying maintenance, and significantly lowering operational costs.
+* Utilized Cursor within the existing codebase to accelerate feature development, refactoring, and day-to-day code generation.
+* Leveraged Claude to rapidly prototype new features, build automation scripts, and evaluate architectural patterns.
 * Acted as a technical mentor for junior team members and spearheaded the onboarding of new joiners to ensure alignment with engineering best practices.
    `,
   },
