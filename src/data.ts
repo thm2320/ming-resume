@@ -166,6 +166,7 @@ const myJobExp: JobExprience[] = [
 * Championed AWS Lambda adoption for API development, reducing infrastructure overhead, simplifying maintenance, and significantly lowering operational costs.
 * Utilized Cursor within the existing codebase to accelerate feature development, refactoring, and day-to-day code generation.
 * Leveraged Claude to rapidly prototype new features, build automation scripts, and evaluate architectural patterns.
+* Acted as a technical mentor for junior team members and spearheaded the onboarding of new joiners to ensure alignment with engineering best practices.
    `,
   },
   {
