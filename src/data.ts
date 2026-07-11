@@ -155,18 +155,14 @@ const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* Spearheaded the end-to-end development of the company's primary online auction platform (sgbaldwins.com), delivering a critical new revenue stream from concept to launch in just 2 months.
-* Architected and engineered the Central Data Service (CDS), a foundational platform to centralize customer and invoice data from multiple e-commerce websites into a single source of truth.
-* Implemented robust, event-driven data ingestion pipelines using AWS SQS, SNS, Step Functions, and Lambda to power the CDS, enabling integration with BI tools and internal systems.
-* Designed and deployed a secure, containerized API layer for the CDS using NestJS on AWS ECS, providing unified and reliable data access across the organization.
-* Led the development of 'Stampedia', a specialized stamp database, by designing a new, modernized schema and successfully migrating extensive data from a complex legacy system.
-* Built and performance-tuned a high-availability search API for Stampedia, dramatically improving data retrieval speeds and providing the data backbone for other services.
-* Expedited the migration of legacy agency stamp data to 'Stampedia,' rapidly delivering an accurate and reliable data foundation for the new website.
-* Refactored infrastructure for the new website (https://collector-hub.stanleygibbons.com/), seamlessly integrating stamp catalogs with user collection data to accelerate feature development.
-* Championed AWS Lambda adoption for API development, reducing infrastructure overhead, simplifying maintenance, and significantly lowering operational costs.
-* Utilized Cursor within the existing codebase to accelerate feature development, refactoring, and day-to-day code generation.
-* Leveraged Claude to rapidly prototype new features, build automation scripts, and evaluate architectural patterns.
-* Acted as a technical mentor for junior team members and spearheaded the onboarding of new joiners to ensure alignment with engineering best practices.
+*  **AI Feature Development (Cursor, Claude)**: Doubled daily ticket delivery and accelerated velocity, completing a complex 2-month legacy data migration in just 2 weeks.
+*  **Full-Stack Project Delivery (TypeScript, Next.js, AWS, Pulumi)**: Launched a primary auction revenue platform from concept to production in 2 months, digitized manual Finance workflows via a Central Data Service, and engineered a Stamp Data Service powering the core website for 1,000+ active users.
+*  **CI/CD Automation (GitHub Actions)**: Automated pipelines to slash deployment times by an estimated 80% while securing production stability via automated unit/integration test frameworks.
+*  **Zero-Downtime Data Migration (TypeScript, SQL)**: Engineered a reusable pipeline that migrated 60M+ stamps (10k+ sets, 100+ countries) with zero downtime for both legacy and new platforms.
+*  **Cloud Cost Optimization (AWS Lambda, ECS, Serverless)**: Proactively audited legacy cloud setups to eliminate unused services, saving $50k/month, and cut API infrastructure costs by 90% via ECS-to-Lambda migration.
+*  **Performance & Integrations (REST APIs, AWS)**: Optimized a critical search API to reduce response latency from 20 seconds to under 1 second, and unblocked the team by owning complex 3rd-party integrations.
+*  **Technical Leadership (AWS, Step Functions, Redis)**: Upskilled the entire engineering department—including senior leads and management—on event-driven design, caching, and cost-saving architectural refactors.
+*  **Team Mentoring & Onboarding**: Accelerated engineering ramp-up times by personally guiding new senior and junior hires through core architectures and establishing robust code review standards.
    `,
   },
   {
