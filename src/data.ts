@@ -133,40 +133,36 @@ const myJobExp: JobExprience[] = [
         fromDate: { year: 2023, month: 'September' },
         mode: WorkMode.FullTime,
         title: 'Software engineer',
-        skillSet: [
-          'AWS',
-          'SST',
-          'CDK',
-          'Pulumi',
-          'Serverless Framework',
-          'Typescript',
-          'Node.js',
-          'React.js',
-          'Nextjs',
-          'Nestjs',
-          'Docker',
-          'Postgresql',
-          'Jest',
-          'Vitest',
-          'Cursor',
-          'Claude',
-        ],
+        // skillSet: [
+        //   'AWS',
+        //   'SST',
+        //   'CDK',
+        //   'Pulumi',
+        //   'Serverless Framework',
+        //   'Typescript',
+        //   'Node.js',
+        //   'React.js',
+        //   'Nextjs',
+        //   'Nestjs',
+        //   'Docker',
+        //   'Postgresql',
+        //   'Jest',
+        //   'Vitest',
+        //   'Cursor',
+        //   'Claude',
+        // ],
       },
     ],
     location: 'London',
     descriptions: `
-* Spearheaded the end-to-end development of the company's primary online auction platform (sgbaldwins.com), delivering a critical new revenue stream from concept to launch in just 2 months.
-* Architected and engineered the Central Data Service (CDS), a foundational platform to centralize customer and invoice data from multiple e-commerce websites into a single source of truth.
-* Implemented robust, event-driven data ingestion pipelines using AWS SQS, SNS, Step Functions, and Lambda to power the CDS, enabling integration with BI tools and internal systems.
-* Designed and deployed a secure, containerized API layer for the CDS using NestJS on AWS ECS, providing unified and reliable data access across the organization.
-* Led the development of 'Stampedia', a specialized stamp database, by designing a new, modernized schema and successfully migrating extensive data from a complex legacy system.
-* Built and performance-tuned a high-availability search API for Stampedia, dramatically improving data retrieval speeds and providing the data backbone for other services.
-* Expedited the migration of legacy agency stamp data to 'Stampedia,' rapidly delivering an accurate and reliable data foundation for the new website.
-* Refactored infrastructure for the new website (https://collector-hub.stanleygibbons.com/), seamlessly integrating stamp catalogs with user collection data to accelerate feature development.
-* Championed AWS Lambda adoption for API development, reducing infrastructure overhead, simplifying maintenance, and significantly lowering operational costs.
-* Utilized Cursor within the existing codebase to accelerate feature development, refactoring, and day-to-day code generation.
-* Leveraged Claude to rapidly prototype new features, build automation scripts, and evaluate architectural patterns.
-* Acted as a technical mentor for junior team members and spearheaded the onboarding of new joiners to ensure alignment with engineering best practices.
+*  **AI Feature Development (Cursor, Claude)**: Doubled daily ticket delivery and accelerated velocity, completing a complex 2-month legacy data migration in just 2 weeks.
+*  **Full-Stack Project Delivery (TypeScript, Next.js, AWS, Pulumi)**: Launched a primary auction revenue platform from concept to production in 2 months, digitized manual Finance workflows via a Central Data Service, and engineered a Stamp Data Service powering the core website for 1,000+ active users.
+*  **CI/CD Automation (GitHub Actions)**: Automated pipelines to slash deployment times by an estimated 80% while securing production stability via automated unit/integration test frameworks.
+*  **Zero-Downtime Data Migration (TypeScript, SQL)**: Engineered a reusable pipeline that migrated 60M+ stamps (10k+ sets, 100+ countries) with zero downtime for both legacy and new platforms.
+*  **Cloud Cost Optimization (AWS Lambda, ECS, Serverless)**: Proactively audited legacy cloud setups to eliminate unused services, saving $50k/month, and cut API infrastructure costs by 90% via ECS-to-Lambda migration.
+*  **Performance & Integrations (REST APIs, AWS)**: Optimized a critical search API to reduce response latency from 20 seconds to under 1 second, and unblocked the team by owning complex 3rd-party integrations.
+*  **Technical Leadership (AWS, Step Functions, Redis)**: Upskilled the entire engineering department—including senior leads and management—on event-driven design, caching, and cost-saving architectural refactors.
+*  **Team Mentoring & Onboarding**: Accelerated engineering ramp-up times by personally guiding new senior and junior hires through core architectures and establishing robust code review standards.
    `,
   },
   {
@@ -177,23 +173,21 @@ const myJobExp: JobExprience[] = [
         toDate: { year: 2023, month: 'Aug' },
         mode: WorkMode.FullTime,
         title: 'Relocation & Self Development',
-        skillSet: [
-          'Typescript',
-          'Node.js',
-          'React.js',
-          'Nextjs',
-          'Socket.io',
-          'Jest',
-        ],
+        // skillSet: [
+        //   'Typescript',
+        //   'Node.js',
+        //   'React.js',
+        //   'Nextjs',
+        //   'Socket.io',
+        //   'Jest',
+        // ],
       },
     ],
     location: 'London',
     descriptions: `
-* Relocated from Hong Kong to London for career growth opportunities in 2023 April
-* Completed an online devops and AWS cloud service course to expand skill set
-* Actively engaged in self-practice with various AWS cloud services to enhance proficiency
-* Successfully obtained certification as 'AWS Certified Developer - Associate'
-* Independently worked on personal projects utilizing a diverse tech stack including Typescript, Node.js, React.js, Nextjs, Socket.io, and Jest.
+* **AWS Cloud Certification**: Earned the AWS Certified Developer – Associate certification, validating expertise in cloud-native development, security, and deployment.
+* **Cloud & DevOps Upskilling**: Advanced technical proficiency in core AWS services, DevOps principles, and automated infrastructure configuration to align with UK market standards.
+* **Full-Stack Projects (TypeScript, Next.js, Node.js, Jest)**: Designed personal architectures with strict test coverage, implementing Socket.io to build low-latency, real-time data communication services.
     `,
   },
   {
@@ -204,28 +198,28 @@ const myJobExp: JobExprience[] = [
         toDate: { year: 2022, month: 'Jun' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
-        skillSet: [
-          'AWS',
-          'Serverless Framework',
-          'Typescript',
-          'Node.js',
-          'React.js',
-          'Single-SPA',
-          'Postgresql',
-          'Oracle',
-          'Dynamodb',
-          'Jest',
-        ],
+        // skillSet: [
+        //   'AWS',
+        //   'Serverless Framework',
+        //   'Typescript',
+        //   'Node.js',
+        //   'React.js',
+        //   'Single-SPA',
+        //   'Postgresql',
+        //   'Oracle',
+        //   'Dynamodb',
+        //   'Jest',
+        // ],
       },
     ],
     companyName: 'Fleet Management Limited',
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* Successfully modernized a major module from a monolithic legacy system to a scalable and extensible microservice architecture. This transformation improved workflow, user experience, and added new features.
-* Led integration efforts between our company's main system and a third party system, creating a valuable business service that increased opportunities for the company.
-* Developed a automated monitoring solution to identify and resolve data synchronization issues between old and new systems, reducing maintenance workload for the team.
-* Managed and mentored a diverse global remote development team, providing code reviews and guidance to ensure smooth collaboration and high-quality work.
+* **Monolith-to-Microservice Migration**: Modernized a major legacy module into a scalable, extensible microservice architecture, streamlining internal workflows and enabling seamless new feature integration.
+* **3rd-Party System Integration**: Led the integration between the core company platform and an external third-party system, engineering a high-value business service that unlocked new market opportunities.
+* **Automated Data Monitoring**: Developed an automated monitoring solution to identify and resolve data synchronization mismatches between legacy and modern systems, significantly reducing team maintenance overhead.
+* **Global Team Leadership**: Managed and mentored a diverse, remote global engineering team, establishing rigorous code review standards and architectural guidance to ensure high-quality, collaborative delivery.
 `,
   },
   {
@@ -236,12 +230,12 @@ const myJobExp: JobExprience[] = [
         toDate: { year: 2021, month: 'Mar' },
         mode: WorkMode.PartTime,
         title: 'Freelance',
-        skillSet: ['React.js', 'Typescript', 'Sass'],
+        // skillSet: ['React.js', 'Typescript', 'Sass'],
       },
     ],
     location: 'Hong Kong',
     descriptions: `
-  * Helped updating the company retail website for different sales events
+* **E-Commerce Feature Delivery**: Modernized and optimized the company's retail platform to support high-traffic sales events, deploying time-sensitive feature updates and ensuring UI/UX reliability during peak user volume.
 `,
   },
   {
@@ -252,19 +246,19 @@ const myJobExp: JobExprience[] = [
         toDate: { year: 2020, month: 'Jul' },
         mode: WorkMode.FullTime,
         title: 'System Analyst',
-        skillSet: [
-          'ReactJs',
-          'Java',
-          'Grails',
-          'SQL Server',
-          'Mongodb',
-          'ExtJs',
-        ],
+        // skillSet: [
+        //   'ReactJs',
+        //   'Java',
+        //   'Grails',
+        //   'SQL Server',
+        //   'Mongodb',
+        //   'ExtJs',
+        // ],
         descriptions: `
-* Led the successful transformation of multiple outdated systems into modern, easily extensible ones through the application of cutting-edge technologies.
-* Identified and resolved performance issues on key company products by conducting thorough research and implementing load testing tools.
-* Enhanced user experiences by designing and implementing innovative features based on extensive user requirements analysis.
-* Collaborated with module owners and third-party providers to ensure seamless integration, resulting in a more flexible system capable of delivering tailored solutions to clients.
+* **Legacy System Modernization**: Led the successful architectural transformation of multiple outdated legacy systems into highly extensible, modular platforms using modern development frameworks and design patterns.
+* **Performance Engineering & Load Testing**: Researched, designed, and executed load-testing strategies to proactively identify and resolve critical performance bottlenecks across core company products.
+* **User-Centric Feature Delivery**: Translated complex user requirements into high-performance features, directly optimizing user experience and system responsiveness.
+* **Cross-Functional & 3rd-Party Integration**: Collaborated closely with internal module owners and external third-party providers to engineer flexible integrations, enabling tailored client solutions.
 `,
       },
       {
@@ -272,19 +266,19 @@ const myJobExp: JobExprience[] = [
         toDate: { year: 2018, month: 'Oct' },
         mode: WorkMode.FullTime,
         title: 'Senior Software Engineer',
-        skillSet: [
-          'ReactJs',
-          'Java',
-          'Grails',
-          'SQL Server',
-          'Mongodb',
-          'ExtJs',
-        ],
+        // skillSet: [
+        //   'ReactJs',
+        //   'Java',
+        //   'Grails',
+        //   'SQL Server',
+        //   'Mongodb',
+        //   'ExtJs',
+        // ],
         descriptions: `
-* Develop a reusable charting web app that can plug into different systems. The charting system helps our company to gain more business opportunities.
-* Improve user experiences by designing and implementing new features according to user requirements.
-* Help users solving technical problems
-* Participate in important release deployment to ensure the process is smooth.
+* **Reusable Charting Architecture**: Developed a modular, plug-and-play charting web application integrated across multiple systems, driving data visibility that unlocked new enterprise business opportunities.
+* **User-Driven Product Evolution**: Designed and delivered core features mapped strictly to user requirements, directly elevating product UX and system utility.
+* **Tier-3 Technical Support**: Functioned as the primary escalation point to diagnose and resolve complex technical issues, ensuring high system availability for end-users.
+* **Release & Deployment Management**: Partnered in critical production release deployments, managing deployment stability and maintaining smooth software delivery pipelines.
     `,
       },
       {
@@ -292,10 +286,10 @@ const myJobExp: JobExprience[] = [
         toDate: { year: 2016, month: 'Nov' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
-        skillSet: ['Java', 'Grails', 'SQL Server', 'Mongodb', 'ExtJs'],
+        // skillSet: ['Java', 'Grails', 'SQL Server', 'Mongodb', 'ExtJs'],
         descriptions: `
-* Worked on Hong Kong Government Project which is important to public health
-* Helped Project manager and supervisors to maintain and develop company main product
+* **Public Health Government Initiative**: Contributed to the development and maintenance of a mission-critical Hong Kong government project directly impacting public health infrastructure and data reliability.
+* **Core Product Co-Ownership**: Partnered closely with project managers and engineering supervisors to drive the continuous development, feature expansion, and maintenance of the company's flagship product.
     `,
       },
     ],
