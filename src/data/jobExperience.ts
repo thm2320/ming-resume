@@ -33,12 +33,12 @@ export const myJobExp: JobExprience[] = [
     location: 'London',
     descriptions: `
 *  **AI Feature Development (Cursor, Claude)**: Doubled daily ticket delivery and accelerated velocity, completing a complex 2-month legacy data migration in just 2 weeks.
-*  **Full-Stack Project Delivery (TypeScript, Next.js, AWS, Pulumi)**: Launched a primary auction revenue platform from concept to production in 2 months, digitized manual Finance workflows via a Central Data Service, and engineered a Stamp Data Service powering the core website for 1,000+ active users.
+*  **Full-Stack Project Delivery (TypeScript, Next.js, Vercel, Nestjs, AWS, Lambda, SQS, SNS, Step Functions, SST, CDK, Pulumi)**: Launched a primary auction revenue platform from concept to production in 2 months, digitized manual Finance workflows via a Central Data Service, and engineered a Stamp Data Service powering the core website for 1,000+ active users.
 *  **CI/CD Automation (GitHub Actions)**: Automated pipelines to slash deployment times by an estimated 80% while securing production stability via automated unit/integration test frameworks.
-*  **Zero-Downtime Data Migration (TypeScript, SQL)**: Engineered a reusable pipeline that migrated 60M+ stamps (10k+ sets, 100+ countries) with zero downtime for both legacy and new platforms.
+*  **Zero-Downtime Data Migration (TypeScript, Node.js, SQL, PostgreSQL)**: Engineered a reusable pipeline that migrated 60M+ stamps (10k+ sets, 100+ countries) with zero downtime for both legacy and new platforms.
 *  **Cloud Cost Optimization (AWS Lambda, ECS, Serverless)**: Proactively audited legacy cloud setups to eliminate unused services, saving $50k/month, and cut API infrastructure costs by 90% via ECS-to-Lambda migration.
 *  **Performance & Integrations (REST APIs, AWS)**: Optimized a critical search API to reduce response latency from 20 seconds to under 1 second, and unblocked the team by owning complex 3rd-party integrations.
-*  **Technical Leadership (AWS, Step Functions, Redis)**: Upskilled the entire engineering department—including senior leads and management—on event-driven design, caching, and cost-saving architectural refactors.
+*  **Technical Leadership (AWS)**: Upskilled the entire engineering department—including senior leads and management—on event-driven design, caching, and cost-saving architectural refactors.
 *  **Team Mentoring & Onboarding**: Accelerated engineering ramp-up times by personally guiding new senior and junior hires through core architectures and establishing robust code review standards.
    `,
   },
@@ -93,9 +93,9 @@ export const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* **Monolith-to-Microservice Migration**: Modernized a major legacy module into a scalable, extensible microservice architecture, streamlining internal workflows and enabling seamless new feature integration.
-* **3rd-Party System Integration**: Led the integration between the core company platform and an external third-party system, engineering a high-value business service that unlocked new market opportunities.
-* **Automated Data Monitoring**: Developed an automated monitoring solution to identify and resolve data synchronization mismatches between legacy and modern systems, significantly reducing team maintenance overhead.
+* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice architecture, successfully migrating **10M+ records with zero data loss** while serving **1,000+ active daily users**.
+* **Revenue-Generating Integration:** Engineered a high-availability third-party system integration utilizing AWS Lambda and REST APIs, enabling seamless paid subscription models and launching a new enterprise revenue channel.
+* **Automated Data Monitoring & Reliability:** Engineered an automated data reconciliation system using AWS CDK and ECS, eliminating daily 1-hour manual data validation tasks and saving the team 5+ hours per week in operational maintenance.
 * **Global Team Leadership**: Managed and mentored a diverse, remote global engineering team, establishing rigorous code review standards and architectural guidance to ensure high-quality, collaborative delivery.
 `,
   },
