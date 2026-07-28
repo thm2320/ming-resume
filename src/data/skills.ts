@@ -5,8 +5,7 @@ export const skills: Skills = {
   "Backend & APIs":
     "Node.js, NestJS, Express.js, REST APIs, GraphQL, Socket.io",
   "Frontend Development": "React.js, Next.js, Redux, Chakra UI, Material-UI",
-  "Cloud & DevOps":
-    "AWS (Lambda, SQS, SNS, Step Functions, ECS), Serverless, Vercel, Docker, GitHub Actions, Redis",
+ "Cloud, IaC & DevOps": "AWS (Lambda, SQS, SNS, Step Functions, ECS), Terraform, SST, CDK, Pulumi, Serverless, Vercel, Docker, Kubernetes, GitHub Actions (CI/CD), Redis",
   Database: "PostgreSQL, AWS DynamoDB, MongoDB, MySQL",
   "Testing & Tooling": "Jest, Vitest, Postman, Git",
   "AI-Assisted Engineering": "Cursor, Claude",
