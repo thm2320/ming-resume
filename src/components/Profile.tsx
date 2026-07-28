@@ -20,11 +20,10 @@ const Profile = () => {
         direction={{ base: 'column', md: 'row' }}
         justify={{ sm: 'left' }}
       >
-        <Container>
+        <Container >
           <IntroSection />
+          <SkillSection />
           <JobSection />
-        </Container>
-        <Container miw={500}>
           <Stack spacing="xs">
             <CertificationSection />
             <Divider my="sm" variant="dotted" />
