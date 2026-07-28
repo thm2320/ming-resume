@@ -68,7 +68,7 @@ const WorkDurationText = ({ workDuration }: { workDuration: WorkDuration }) => {
         </Box>
         <IconCalendarEvent size="1.125rem" />
         <Box mx={5}>{workPeriod}</Box>
-        <Badge variant="outline">{workDuration.mode}</Badge>
+        {/* <Badge variant="outline">{workDuration.mode}</Badge> */}
       </Center>
       {workDuration.skillSet && (
         <>
