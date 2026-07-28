@@ -1,4 +1,4 @@
-import { Title, Flex, Box, Stack } from '@mantine/core';
+import { Title, Flex, Box, Stack } from "@mantine/core";
 import {
   IconMail,
   IconBrandGithub,
@@ -6,10 +6,10 @@ import {
   IconMapPin,
   IconEPassport,
   IconPhone,
-} from '@tabler/icons-react';
-import { basicInfo } from '../../data';
+} from "@tabler/icons-react";
+import { basicInfo } from "../../data";
 // import { usePrintContext } from '../../contexts/print';
-import { TextWithIcon } from '../BasicInfoSection/TextWithIcon';
+import { TextWithIcon } from "../BasicInfoSection/TextWithIcon";
 
 // const AvatarSection = () => {
 //   return (
@@ -36,41 +36,43 @@ import { TextWithIcon } from '../BasicInfoSection/TextWithIcon';
 
 const BasicInfoText = () => {
   return (
-    <Stack spacing={0}>
+    <>
       <Title mb={15}>{basicInfo.name}</Title>
-      <TextWithIcon
-        icon={<IconMail />}
-        url={`mailto:${basicInfo.email}`}
-        text={basicInfo.email}
-      />
-      {basicInfo.phone && (
-        <TextWithIcon icon={<IconPhone />} text={basicInfo.phone} />
-      )}
-      {basicInfo.github && (
+      <Flex gap="sm" wrap="wrap">
+        {basicInfo.location && (
+          <TextWithIcon
+            icon={<IconMapPin />}
+            url={`https://www.google.com/maps/search/${basicInfo.location}`}
+            text={basicInfo.location}
+          />
+        )}
+        {basicInfo.phone && (
+          <TextWithIcon icon={<IconPhone />} text={basicInfo.phone} />
+        )}
         <TextWithIcon
-          icon={<IconBrandGithub />}
-          url={basicInfo.github}
-          text={basicInfo.github}
+          icon={<IconMail />}
+          url={`mailto:${basicInfo.email}`}
+          text={basicInfo.email}
         />
-      )}
-      {basicInfo.linkedin && (
-        <TextWithIcon
-          icon={<IconBrandLinkedin />}
-          url={basicInfo.linkedin}
-          text={basicInfo.linkedin}
-        />
-      )}
-      {basicInfo.location && (
-        <TextWithIcon
-          icon={<IconMapPin />}
-          url={`https://www.google.com/maps/search/${basicInfo.location}`}
-          text={basicInfo.location}
-        />
-      )}
-      {basicInfo.visaInfo && (
-        <TextWithIcon icon={<IconEPassport />} text={basicInfo.visaInfo} />
-      )}
-    </Stack>
+        {basicInfo.linkedin && (
+          <TextWithIcon
+            icon={<IconBrandLinkedin />}
+            url={basicInfo.linkedin}
+            text={basicInfo.linkedin}
+          />
+        )}
+        {basicInfo.github && (
+          <TextWithIcon
+            icon={<IconBrandGithub />}
+            url={basicInfo.github}
+            text={basicInfo.github}
+          />
+        )}
+        {basicInfo.visaInfo && (
+          <TextWithIcon icon={<IconEPassport />} text={basicInfo.visaInfo} />
+        )}
+      </Flex>
+    </>
   );
 };
 

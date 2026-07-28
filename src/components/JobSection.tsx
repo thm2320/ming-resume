@@ -1,6 +1,5 @@
 // import { useState, useCallback } from 'react';
 import {
-  Timeline,
   Text,
   Badge,
   Center,
@@ -9,7 +8,6 @@ import {
   Flex,
   Container,
 } from '@mantine/core';
-import { useHover } from '@mantine/hooks';
 import ReactMarkdown from 'react-markdown';
 import { myJobExp } from '../data';
 import { JobExprience, WorkDuration } from '../types/jobExperience.type';
@@ -122,7 +120,7 @@ const JobExperienceContainer = ({ data }: { data: JobExprience }) => {
           )}
         </>
       ))}
-      <Box className="job-description" w="90%">
+      <Box className="job-description" w="100%">
         <JobDescriptions descriptions={data.descriptions || ''} />
       </Box>
     </Container>
@@ -134,36 +132,11 @@ const JobSection = () => {
   return (
     <Box>
       <Title order={3}>Work Experience</Title>
-      <Timeline
-        mt={5}
-        // active={myJobExp.length - currentActive}
-        reverseActive
-        bulletSize={24}
-        lineWidth={2}
-      >
-        {myJobExp.map((item: JobExprience) => {
-          const { hovered, ref } = useHover();
-          // const onHover = useCallback(() => {
-          //   setCurrentActive(idx + 1);
-          // }, []);
-          // const onMouseOut = useCallback(() => {
-          //   setCurrentActive(myJobExp.length + 1);
-          // }, []);
-          return (
-            <Timeline.Item
-              bullet={hovered}
-              // onMouseOver={onHover}
-              // onMouseOut={onMouseOut}
-              active={hovered}
-              ref={ref}
-              bg={hovered ? 'blue.0' : undefined}
-              key={`${item.id}`}
-            >
-              <JobExperienceContainer data={item}></JobExperienceContainer>
-            </Timeline.Item>
-          );
-        })}
-      </Timeline>
+      {myJobExp.map((item: JobExprience) => {
+        return (
+            <JobExperienceContainer data={item}></JobExperienceContainer>
+        );
+      })}
     </Box>
   );
 };
