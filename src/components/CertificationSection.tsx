@@ -1,33 +1,33 @@
 import { List, Title, Text } from '@mantine/core';
-import { certification } from '../data';
-import { IconCertificate } from '@tabler/icons-react';
+import { certAndEduItems } from '../data';
+import { IconCertificate, IconSchool } from '@tabler/icons-react';
 
-const CertificationSection = () => {
+const CertAndEduSection = () => {
 
-    return (
-        <>
-            <Title order={3}>Certifications</Title>
-            <List>
-                { certification.map((cert, idx)=>{
-                    return (
-                            <List.Item 
-                                key={`${idx}_${cert.title.substring(0, Math.min(5,cert.title.length))}`}
-                                icon={
-                                      <IconCertificate size="1rem" />
-                                  }
-                                >
-                                {cert.certificateUrl? <><Text fw={500} component='a' href={cert.certificateUrl} target="_blank">{cert.title} ({cert.year})</Text><br/></>:
-                                    <Text fw={500}>{cert.title} ({cert.year})</Text>
-                                }
-                                {cert.instituteUrl? <Text c="dimmed" component='a' href={cert.instituteUrl} target="_blank">{cert.institute}</Text>:
-                                    <Text c="dimmed">{cert.institute}</Text>
-                                }
-                            </List.Item>
-                        );
-                }) }
-            </List>
-        </>
-    );
+  return (
+    <>
+      <Title order={3}>Certifications & Education</Title>
+      <List>
+        {certAndEduItems.map((item, idx) => {
+          return (
+            <List.Item
+              key={`${idx}_${item.title.substring(0, Math.min(5, item.title.length))}`}
+              icon={
+                item.type === 'certification' ? <IconCertificate size="1rem" /> : <IconSchool size="1rem" />
+              }
+            >
+              {item.certificateUrl ? <><Text fw={500} component='a' href={item.certificateUrl} target="_blank">{item.title} ({item.year})</Text><br /></> :
+                <Text fw={500}>{item.title} ({item.year})</Text>
+              }
+              {item.instituteUrl ? <Text c="dimmed" component='a' href={item.instituteUrl} target="_blank">{item.institute}</Text> :
+                <Text c="dimmed">{item.institute}</Text>
+              }
+            </List.Item>
+          );
+        })}
+      </List>
+    </>
+  );
 };
 
-export default CertificationSection;
+export default CertAndEduSection;
