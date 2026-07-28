@@ -89,7 +89,7 @@ const WorkDurationText = ({ workDuration }: { workDuration: WorkDuration }) => {
 
 const JobExperienceContainer = ({ data }: { data: JobExprience }) => {
   return (
-    <Container fluid>
+    <Container fluid style={{padding:'5 0 0 0'}}>
       <Flex maw="100%" wrap="wrap">
         {data.companyName && (
           <Center inline>
@@ -114,7 +114,7 @@ const JobExperienceContainer = ({ data }: { data: JobExprience }) => {
             key={`${workDuration.title ?? ''} ${workDuration.fromDate.year}`}
           />
           {workDuration.descriptions && (
-            <Box className="job-description" w="90%">
+            <Box className="job-description" w="100%">
               <JobDescriptions descriptions={workDuration.descriptions} />
             </Box>
           )}
@@ -130,7 +130,7 @@ const JobExperienceContainer = ({ data }: { data: JobExprience }) => {
 const JobSection = () => {
   // const [currentActive, setCurrentActive] = useState(myJobExp.length + 1);
   return (
-    <Box>
+    <Box style={{padding:0}}>
       <Title order={3}>Work Experience</Title>
       {myJobExp.map((item: JobExprience) => {
         return (
