@@ -1,3 +1,3 @@
 export interface Skills {
-    [key: string]: string[]
+    [key: string]: string
 }

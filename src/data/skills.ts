@@ -1,5 +1,18 @@
-import { Skills } from '../types/skill.type';
+import { Skills } from "../types/skill.type";
 
+export const skills: Skills = {
+  Languages: "TypeScript, JavaScript, SQL, Python, Java (Background)",
+  "Backend & APIs":
+    "Node.js, NestJS, Express.js, REST APIs, GraphQL, Socket.io",
+  "Frontend Development": "React.js, Next.js, Redux, Chakra UI, Material-UI",
+  "Cloud & DevOps":
+    "AWS (Lambda, SQS, SNS, Step Functions, ECS), Serverless, Vercel, Docker, GitHub Actions, Redis",
+  Database: "PostgreSQL, AWS DynamoDB, MongoDB, MySQL",
+  "Testing & Tooling": "Jest, Vitest, Postman, Git",
+  "AI-Assisted Engineering": "Cursor, Claude",
+};
+
+/*
 export const skills: Skills = {
   Languages: ['Typescript', ' Javascript', ' Java', ' Groovy'],
   Frontend: [
@@ -59,3 +72,4 @@ export const skills: Skills = {
     'Jmeter',
   ],
 };
+*/
