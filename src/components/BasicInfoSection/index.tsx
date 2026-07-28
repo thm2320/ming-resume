@@ -1,4 +1,4 @@
-import { Title, Flex, Box, Stack } from "@mantine/core";
+import { Title, Flex, Box, } from "@mantine/core";
 import {
   IconMail,
   IconBrandGithub,
