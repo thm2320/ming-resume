@@ -3,7 +3,7 @@ import { JobExprience, WorkMode } from '../types/jobExperience.type';
 export const myJobExp: JobExprience[] = [
   {
     id: 'stanleygibbons',
-    companyName: 'Stanley Gibbons Baldwins Limited',
+    companyName: 'Stanley Gibbons Baldwin\'s',
     companyUrl: 'https://www.stanleygibbons.com/',
     workDuration: [
       {
@@ -32,16 +32,25 @@ export const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-*  **AI Feature Development (Cursor, Claude)**: Doubled daily ticket delivery and accelerated velocity, completing a complex 2-month legacy data migration in just 2 weeks.
-*  **Full-Stack Project Delivery (TypeScript, Next.js, Vercel, Nestjs, AWS, Lambda, SQS, SNS, Step Functions, SST, CDK, Pulumi)**: Launched a primary auction revenue platform from concept to production in 2 months, digitized manual Finance workflows via a Central Data Service, and engineered a Stamp Data Service powering the core website for 1,000+ active users.
-*  **CI/CD Automation (GitHub Actions)**: Automated pipelines to slash deployment times by an estimated 80% while securing production stability via automated unit/integration test frameworks.
-*  **Zero-Downtime Data Migration (TypeScript, Node.js, SQL, PostgreSQL)**: Engineered a reusable pipeline that migrated 60M+ stamps (10k+ sets, 100+ countries) with zero downtime for both legacy and new platforms.
-*  **Cloud Cost Optimization (AWS Lambda, ECS, Serverless)**: Proactively audited legacy cloud setups to eliminate unused services, saving $50k/month, and cut API infrastructure costs by 90% via ECS-to-Lambda migration.
-*  **Performance & Integrations (REST APIs, AWS)**: Optimized a critical search API to reduce response latency from 20 seconds to under 1 second, and unblocked the team by owning complex 3rd-party integrations.
-*  **Technical Leadership (AWS)**: Upskilled the entire engineering department—including senior leads and management—on event-driven design, caching, and cost-saving architectural refactors.
-*  **Team Mentoring & Onboarding**: Accelerated engineering ramp-up times by personally guiding new senior and junior hires through core architectures and establishing robust code review standards.
-   `,
-  },
+* **Enterprise Data Architecture**: Designed and built a Central Data Service from scratch to aggregate fragmented e-commerce data into a single source of truth, digitizing manual workflows across Finance (ERP), Marketing analytics, and Auction reporting.
+* **Product Delivery & AI Velocity**: Architected and launched a primary auction revenue platform in 2 months using TypeScript, Next.js, and AWS Serverless (Lambda, SQS, Step Functions, SST, CDK); leveraged AI tools (Cursor, Claude) to double ticket throughput.
+* **Cloud Cost Optimization**: Slashed AWS infrastructure costs by $50,000/month by auditing legacy setups and cutting API costs by 90% via an ECS-to-Lambda serverless migration.
+* **Zero-Downtime Migration at Scale**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) with 0% downtime across legacy and new platforms.
+* **API Latency & CI/CD Performance**: Reduced search API response latency from 20s to <1s, built automated GitHub Actions pipelines (slashing deployment times by 80%), and mentored engineering leads on event-driven design.
+
+`,
+/* 
+*  **Enterprise Data Architecture**: Designed and built a Central Data Service from scratch to aggregate fragmented data across multiple e-commerce websites, creating a single source of truth powering core internal services for Finance (ERP integrations), Marketing analytics, and Auction reporting.
+*  **Operational Process Automation**: Replaced legacy manual workflows across Finance, Marketing, and Auction operations with automated data pipelines, drastically improving cross-department reporting accuracy and efficiency.
+*  **Accelerated Feature Velocity**: Leveraged AI-assisted development tools (Cursor, Claude) to double daily ticket throughput and execute a complex legacy data migration 75% faster than estimated (2 weeks vs. 2 months).  
+*  **End-to-End Product Delivery**: Architected and launched a flagship primary auction revenue platform from concept to production in 2 months using TypeScript, Next.js, and AWS serverless infrastructure (Lambda, SQS, SNS, Step Functions, SST, CDK, Pulumi).
+*  **Cloud Architecture & Cost Optimization**: Slashed cloud infrastructure costs by $50,000/month by auditing legacy AWS setups and cutting API infrastructure costs by 90% through an ECS-to-Lambda migration.
+*  **Zero-Downtime Data Migration**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) with 0% downtime for both legacy and new platforms.
+*  **Core Data Infrastructure**: Built a high-availability Stamp Data Service powering the core website for 1,000+ active users and digitized manual Finance workflows via a Central Data Service.
+*  **API Performance Engineering**: Reduced critical search API response latency from 20 seconds to under 1 second and spearheaded complex third-party API integrations to unblock engineering bottlenecks.
+*  **CI/CD & Quality Automation**: Built automated GitHub Actions pipelines with unit and integration testing frameworks, slashing deployment times by an estimated 80% while securing production stability.
+*  **Technical Leadership & Mentorship**: Upskilled senior leads and management on event-driven design, caching, and cost-saving refactors while establishing robust code review standards to accelerate onboarding.
+*/  },
   {
     id: 'self_development',
     workDuration: [
@@ -119,10 +128,10 @@ export const myJobExp: JobExprience[] = [
     id: 'mtg',
     workDuration: [
       {
-        fromDate: { year: 2019, month: 'Oct' },
+        fromDate: { year: 2012, month: 'Sep' },
         toDate: { year: 2020, month: 'Jul' },
         mode: WorkMode.FullTime,
-        title: 'System Analyst',
+        title: 'Software Engineer -> Senior Software Engineer ->System Analyst',
         // skillSet: [
         //   'ReactJs',
         //   'Java',
@@ -132,43 +141,11 @@ export const myJobExp: JobExprience[] = [
         //   'ExtJs',
         // ],
         descriptions: `
-* **Legacy System Modernization**: Led the successful architectural transformation of multiple outdated legacy systems into highly extensible, modular platforms using modern development frameworks and design patterns.
-* **Performance Engineering & Load Testing**: Researched, designed, and executed load-testing strategies to proactively identify and resolve critical performance bottlenecks across core company products.
-* **User-Centric Feature Delivery**: Translated complex user requirements into high-performance features, directly optimizing user experience and system responsiveness.
-* **Cross-Functional & 3rd-Party Integration**: Collaborated closely with internal module owners and external third-party providers to engineer flexible integrations, enabling tailored client solutions.
-`,
+* **System Analyst (2018 – 2020)**: Led architectural modernization of legacy enterprise systems into modular platforms (Java, Spring Boot, SQL). Executed load-testing strategies (JMeter) to eliminate critical performance bottlenecks, and engineered 3rd-party integrations to deliver tailored client solutions.
+* **Senior Software Engineer (2015 – 2018)**: Architected a modular, reusable charting web application adopted across multiple internal systems to unlock new business opportunities. Served as Tier-3 technical escalation lead and managed production release deployments.
+* **Software Engineer (2012 – 2015)**: Contributed to a mission-critical Hong Kong Government Public Health initiative powering public health data infrastructure. Co-owned development and feature expansion for the company's flagship product.`,
       },
-      {
-        fromDate: { year: 2016, month: 'Dec' },
-        toDate: { year: 2018, month: 'Oct' },
-        mode: WorkMode.FullTime,
-        title: 'Senior Software Engineer',
-        // skillSet: [
-        //   'ReactJs',
-        //   'Java',
-        //   'Grails',
-        //   'SQL Server',
-        //   'Mongodb',
-        //   'ExtJs',
-        // ],
-        descriptions: `
-* **Reusable Charting Architecture**: Developed a modular, plug-and-play charting web application integrated across multiple systems, driving data visibility that unlocked new enterprise business opportunities.
-* **User-Driven Product Evolution**: Designed and delivered core features mapped strictly to user requirements, directly elevating product UX and system utility.
-* **Tier-3 Technical Support**: Functioned as the primary escalation point to diagnose and resolve complex technical issues, ensuring high system availability for end-users.
-* **Release & Deployment Management**: Partnered in critical production release deployments, managing deployment stability and maintaining smooth software delivery pipelines.
-    `,
-      },
-      {
-        fromDate: { year: 2012, month: 'Spe' },
-        toDate: { year: 2016, month: 'Nov' },
-        mode: WorkMode.FullTime,
-        title: 'Software Engineer',
-        // skillSet: ['Java', 'Grails', 'SQL Server', 'Mongodb', 'ExtJs'],
-        descriptions: `
-* **Public Health Government Initiative**: Contributed to the development and maintenance of a mission-critical Hong Kong government project directly impacting public health infrastructure and data reliability.
-* **Core Product Co-Ownership**: Partnered closely with project managers and engineering supervisors to drive the continuous development, feature expansion, and maintenance of the company's flagship product.
-    `,
-      },
+//       
     ],
     companyName: 'Mobigator Technology Group',
     companyUrl: 'https://www.mobigator.com/pages/index.asp',

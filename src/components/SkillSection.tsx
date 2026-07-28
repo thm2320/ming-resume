@@ -1,17 +1,21 @@
-import { Badge, Title, Table } from "@mantine/core";
+import { Title,  Text, Box } from "@mantine/core";
 import { skills } from "../data";
 
 const SkillSection = () => {
-    return  (<>
-    <Title order={3}>Skills</Title>
-    <Table>
-        <tbody>{Object.keys(skills).map((key)=>{
-            return <tr key={key}><td>{key}</td><td>{skills[key].map((skill)=>{
-                    return <Badge key={skill} variant="outline" mr={3}>{skill}</Badge>
-                })}</td></tr>
-        })}</tbody>
-    </Table>
-    </>);
-}
+  return (
+    <Box style={{margin:'0 0 5px 0'}}>
+      <Title order={3}>Skills</Title>
+      <Box>
+        {Object.keys(skills).map((key) => {
+          return (
+            <Text variant="outline" mr={3}>
+              <b>{key}</b>: {skills[key]}
+            </Text>
+          );
+        })}
+      </Box>
+    </Box>
+  );
+};
 
 export default SkillSection;
