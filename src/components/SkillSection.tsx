@@ -3,9 +3,9 @@ import { skills } from "../data";
 
 const SkillSection = () => {
   return (
-    <Box style={{margin:'0 0 5px 0'}}>
+    <Box style={{margin:'0 0 16px 0'}}>
+    {/* <Box> */}
       <Title order={3}>Skills</Title>
-      <Box>
         {Object.keys(skills).map((key) => {
           return (
             <Text variant="outline" mr={3}>
@@ -13,7 +13,6 @@ const SkillSection = () => {
             </Text>
           );
         })}
-      </Box>
     </Box>
   );
 };
