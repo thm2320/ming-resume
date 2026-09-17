@@ -8,6 +8,7 @@ export const myJobExp: JobExprience[] = [
     workDuration: [
       {
         fromDate: { year: 2023, month: 'September' },
+        toDate: { year: 2026, month: 'July' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         // skillSet: [
@@ -32,11 +33,12 @@ export const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* **Enterprise Data Architecture & Large-Scale ETL**: Designed and built a Centralised Data Service from scratch featuring high-throughput, event-driven ETL pipelines to process 10M+ records of e-commerce user, order, and product data; maximized operational efficiency by replacing fragmented legacy processes for Finance (ERP), Marketing analytics, and Auction reporting.
+* **Data Architecture & Large-Scale ETL**: Designed and built a Centralised Data Service from scratch featuring high-throughput, event-driven ETL pipelines to process 10M+ records of e-commerce user, order, and product data; maximized operational efficiency by replacing fragmented legacy processes for Finance (ERP), Marketing analytics, and Auction reporting.
 * **Product Delivery & AI Velocity**: Architected and deployed a mission-critical production system for auction revenue in 2 months using TypeScript, Next.js, and AWS Serverless; leveraged AI tools (Cursor, Claude) to automate technical documentation and API specs, doubling ticket throughput and feature velocity.
 * **Cloud Cost Optimization**: Slashed AWS infrastructure costs by $50,000/month by auditing legacy setups and cutting live production system API costs by 90% through an ECS-to-Lambda serverless migration.
 * **Zero-Downtime Migration at Scale**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) across production systems with 0% downtime and zero data loss.
 * **API Latency, Debugging & Performance**: Applied deep-dive production system debugging and profiling to isolate query bottlenecks, reducing search API response latency from 20s to <1s; built automated GitHub Actions pipelines (slashing deployment times by 80%).
+* **Technical Leadership & Mentorship**: Hosted cross-team knowledge-sharing sessions on serverless and event-driven architecture; conducted active pair programming and root-cause debugging to unblock developers, streamline onboarding, and drive robust code review standards.
 `,
 /* 
 *  **Enterprise Data Architecture**: Designed and built a Central Data Service from scratch to aggregate fragmented data across multiple e-commerce websites, creating a single source of truth powering core internal services for Finance (ERP integrations), Marketing analytics, and Auction reporting.
