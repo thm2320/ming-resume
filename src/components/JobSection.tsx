@@ -89,7 +89,7 @@ const WorkDurationText = ({ workDuration }: { workDuration: WorkDuration }) => {
 
 const JobExperienceContainer = ({ data }: { data: JobExprience }) => {
   return (
-    <Container fluid style={{padding:'5 0 0 0'}}>
+    <Container fluid style={{padding:'10px 0'}}>
       <Flex maw="100%" wrap="wrap">
         {data.companyName && (
           <Center inline>
