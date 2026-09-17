@@ -10,7 +10,7 @@ export const myJobExp: JobExprience[] = [
         fromDate: { year: 2023, month: 'September' },
         toDate: { year: 2026, month: 'July' },
         mode: WorkMode.FullTime,
-        title: 'Software engineer',
+        title: 'Software Engineer',
         // skillSet: [
         //   'AWS',
         //   'SST',
@@ -103,7 +103,7 @@ export const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice architecture, successfully migrating **10M+ records with zero data loss** while serving **1,000+ active daily users**.
+* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice/distributed architecture, successfully migrating **10M+ records with zero data loss** while serving **1,000+ active daily users**.
 * **Revenue-Generating Integration:** Engineered a high-availability third-party system integration utilizing AWS Lambda and REST APIs, enabling seamless paid subscription models and launching a new enterprise revenue channel.
 * **Automated Data Monitoring & Reliability:** Engineered an automated data reconciliation system using AWS CDK and ECS, eliminating daily 1-hour manual data validation tasks and saving the team 5+ hours per week in operational maintenance.
 * **Global Team Leadership**: Managed and mentored a diverse, remote global engineering team, establishing rigorous code review standards and architectural guidance to ensure high-quality, collaborative delivery.
@@ -142,9 +142,9 @@ export const myJobExp: JobExprience[] = [
         //   'ExtJs',
         // ],
         descriptions: `
-* **System Analyst (2018 – 2020)**: Led architectural modernization of legacy enterprise systems into modular platforms (Java, Spring Boot, SQL). Executed load-testing strategies (JMeter) to eliminate critical performance bottlenecks, and engineered 3rd-party integrations to deliver tailored client solutions.
-* **Senior Software Engineer (2015 – 2018)**: Architected a modular, reusable charting web application adopted across multiple internal systems to unlock new business opportunities. Served as Tier-3 technical escalation lead and managed production release deployments.
-* **Software Engineer (2012 – 2015)**: Contributed to a mission-critical Hong Kong Government Public Health initiative powering public health data infrastructure. Co-owned development and feature expansion for the company's flagship product.`,
+* **System Analyst (Oct 2018 - Jul 2020)**: Led architectural modernization of legacy enterprise systems into modular platforms (Java, Spring Boot, SQL). Executed load-testing strategies (JMeter) to eliminate critical performance bottlenecks, and engineered 3rd-party integrations to deliver tailored client solutions.
+* **Senior Software Engineer (Dec 2015 - Oct 2018)**: Architected a modular, reusable charting web application adopted across multiple internal systems to unlock new business opportunities. Served as Tier-3 technical escalation lead and managed production release deployments.
+* **Software Engineer (Sep 2012 - Nov 2015)**: Contributed to a mission-critical Hong Kong Government Public Health initiative powering public health data infrastructure. Co-owned development and feature expansion for the company's flagship product.`,
       },
 //       
     ],
