@@ -8,7 +8,7 @@ export const myJobExp: JobExprience[] = [
     workDuration: [
       {
         fromDate: { year: 2023, month: 'September' },
-        toDate: { year: 2026, month: 'July' },
+        // toDate: { year: 2026, month: 'July' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         // skillSet: [
