@@ -38,6 +38,7 @@ export const myJobExp: JobExprience[] = [
 * **Cloud Cost Optimization**: Slashed AWS infrastructure costs by $50,000/month (~£40k) by auditing legacy setups and cutting live production system API costs by 90% through an ECS-to-Lambda serverless migration.
 * **Zero-Downtime Migration at Scale**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) across production systems with 0% downtime and zero data loss.
 * **API Latency, Debugging & Performance**: Applied deep-dive production system debugging and profiling to isolate query bottlenecks, reducing search API response latency from 20s to under 1s; replaced manual deployments with automated GitHub Actions pipelines, cutting deployment time by ~80%.
+* **Search Result Caching**: Implemented Redis caching of search results in a backend API.
 * **Technical Leadership & Mentorship**: Drove code-review standards and ran cross-team sessions on serverless/event-driven architecture, mentoring developers and accelerating onboarding.
 `,
 /* 
