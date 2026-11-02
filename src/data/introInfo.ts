@@ -1,6 +1,6 @@
 export const introInfo = `
 Senior-level Software Engineer, AWS Certified Developer - Associate, with 12 years building full-stack TypeScript systems across startups, scaleups, and enterprise - including 3 years architecting AWS cloud infrastructure in the UK.\\
-Proven impact: cut AWS costs by $50k/month, delivered re-runnable zero-downtime migrations at 60M+ record scale, and built daily pipelines ingesting 100k+ records across 5+ platforms.\\
+Proven impact: cut AWS costs by $50k/month (~£40k), delivered re-runnable zero-downtime migrations at 60M+ record scale, and built daily pipelines ingesting 100k+ records across 5+ platforms.\\
 Full UK right to work (BNO visa) - no sponsorship required.
 `;
 
