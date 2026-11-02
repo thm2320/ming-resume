@@ -2,7 +2,7 @@ import { Skills } from "../types/skill.type";
 
 export const skills: Skills = {
   "Cloud, IaC & DevOps":
-    "AWS (Lambda, SQS, SNS, Step Functions, ECS), Terraform, SST, CDK, Pulumi, Serverless, Vercel, Docker, Kubernetes, GitHub Actions (CI/CD), Redis",
+    "AWS (Lambda, SQS, SNS, Step Functions, ECS), Terraform, SST v3, CDK, Pulumi (custom AWS resources), Serverless, Vercel, Docker, Kubernetes, GitHub Actions (CI/CD), Redis",
   "Backend & APIs":
     "Node.js, NestJS, Express.js, REST APIs, GraphQL, Socket.io",
   Languages: "TypeScript, JavaScript, SQL, Python, Java (Background)",
