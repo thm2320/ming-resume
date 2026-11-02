@@ -8,7 +8,7 @@ export const myJobExp: JobExprience[] = [
     workDuration: [
       {
         fromDate: { year: 2023, month: 'September' },
-        // toDate: { year: 2026, month: 'July' },
+        toDate: { year: 2026, month: 'June' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         // skillSet: [
@@ -33,12 +33,12 @@ export const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* **Data Architecture & Large-Scale ETL**: Designed and built a Centralised Data Service from scratch featuring high-throughput, event-driven ETL pipelines to process 10M+ records of e-commerce user, order, and product data; maximized operational efficiency by replacing fragmented legacy processes for Finance (ERP), Marketing analytics, and Auction reporting.
+* **Data Architecture & Large-Scale ETL**: Designed and built a Centralised Data Service from scratch featuring high-throughput, event-driven ETL pipelines to process 100k+ records of e-commerce user, order, and product data; maximized operational efficiency by replacing fragmented legacy processes for Finance (ERP), Marketing analytics, and Auction reporting.
 * **Product Delivery & AI Velocity**: Architected and deployed a mission-critical production system for auction revenue in 2 months using TypeScript, Next.js, and AWS Serverless; leveraged AI tools (Cursor, Claude) to automate technical documentation and API specs, doubling ticket throughput and feature velocity.
 * **Cloud Cost Optimization**: Slashed AWS infrastructure costs by $50,000/month by auditing legacy setups and cutting live production system API costs by 90% through an ECS-to-Lambda serverless migration.
 * **Zero-Downtime Migration at Scale**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) across production systems with 0% downtime and zero data loss.
-* **API Latency, Debugging & Performance**: Applied deep-dive production system debugging and profiling to isolate query bottlenecks, reducing search API response latency from 20s to <1s; built automated GitHub Actions pipelines (slashing deployment times by 80%).
-* **Technical Leadership & Mentorship**: Hosted cross-team knowledge-sharing sessions on serverless and event-driven architecture; conducted active pair programming and root-cause debugging to unblock developers, streamline onboarding, and drive robust code review standards.
+* **API Latency, Debugging & Performance**: Applied deep-dive production system debugging and profiling to isolate query bottlenecks, reducing search API response latency from 20s to under 1s; built automated GitHub Actions pipelines (slashing deployment times by 80%).
+* **Technical Leadership & Mentorship**: Drove code-review standards and ran cross-team sessions on serverless/event-driven architecture, mentoring developers and accelerating onboarding.
 `,
 /* 
 *  **Enterprise Data Architecture**: Designed and built a Central Data Service from scratch to aggregate fragmented data across multiple e-commerce websites, creating a single source of truth powering core internal services for Finance (ERP integrations), Marketing analytics, and Auction reporting.
@@ -72,7 +72,7 @@ export const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* **AWS Cloud Certification**: Earned the AWS Certified Developer – Associate certification, validating expertise in cloud-native development, security, and deployment.
+* **AWS Cloud Certification**: Earned the AWS Certified Developer - Associate certification, validating expertise in cloud-native development, security, and deployment.
 * **Cloud & DevOps Upskilling**: Advanced technical proficiency in core AWS services, DevOps principles, and automated infrastructure configuration to align with UK market standards.
 * **Full-Stack Projects (TypeScript, Next.js, Node.js, Jest)**: Designed personal architectures with strict test coverage, implementing Socket.io to build low-latency, real-time data communication services.
     `,
@@ -103,26 +103,10 @@ export const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice/distributed architecture, successfully migrating **10M+ records with zero data loss** while serving **1,000+ active daily users**.
+* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice/distributed architecture, successfully migrating **10M+ seafarer records with zero data loss** while serving **1,000+ active daily users**.
 * **Revenue-Generating Integration:** Engineered a high-availability third-party system integration utilizing AWS Lambda and REST APIs, enabling seamless paid subscription models and launching a new enterprise revenue channel.
 * **Automated Data Monitoring & Reliability:** Engineered an automated data reconciliation system using AWS CDK and ECS, eliminating daily 1-hour manual data validation tasks and saving the team 5+ hours per week in operational maintenance.
 * **Global Team Leadership**: Managed and mentored a diverse, remote global engineering team, establishing rigorous code review standards and architectural guidance to ensure high-quality, collaborative delivery.
-`,
-  },
-  {
-    id: 'freelance',
-    workDuration: [
-      {
-        fromDate: { year: 2020, month: 'Jul' },
-        toDate: { year: 2021, month: 'Mar' },
-        mode: WorkMode.PartTime,
-        title: 'Freelance',
-        // skillSet: ['React.js', 'Typescript', 'Sass'],
-      },
-    ],
-    location: 'Hong Kong',
-    descriptions: `
-* **E-Commerce Feature Delivery**: Modernized and optimized the company's retail platform to support high-traffic sales events, deploying time-sensitive feature updates and ensuring UI/UX reliability during peak user volume.
 `,
   },
   {
@@ -132,7 +116,7 @@ export const myJobExp: JobExprience[] = [
         fromDate: { year: 2012, month: 'Sep' },
         toDate: { year: 2020, month: 'Jul' },
         mode: WorkMode.FullTime,
-        title: 'Software Engineer -> Senior Software Engineer ->System Analyst',
+        title: 'Software Engineer | Senior Software Engineer | System Analyst',
         // skillSet: [
         //   'ReactJs',
         //   'Java',

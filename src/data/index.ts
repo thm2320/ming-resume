@@ -1,6 +1,5 @@
 export { basicInfo } from './basicInfo';
 export { introInfo } from './introInfo';
-export { education } from './education';
 export { skills } from './skills';
 export { certAndEduItems } from './certification';
 export { awards } from './awards';
