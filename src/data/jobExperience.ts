@@ -38,7 +38,7 @@ export const myJobExp: JobExprience[] = [
 * **Cloud Cost Optimization**: Slashed AWS infrastructure costs by $50,000/month by auditing legacy setups and cutting live production system API costs by 90% through an ECS-to-Lambda serverless migration.
 * **Zero-Downtime Migration at Scale**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) across production systems with 0% downtime and zero data loss.
 * **API Latency, Debugging & Performance**: Applied deep-dive production system debugging and profiling to isolate query bottlenecks, reducing search API response latency from 20s to under 1s; built automated GitHub Actions pipelines (slashing deployment times by 80%).
-* **Technical Leadership & Mentorship**: Hosted cross-team knowledge-sharing sessions on serverless and event-driven architecture; conducted active pair programming and root-cause debugging to unblock developers, streamline onboarding, and drive robust code review standards.
+* **Technical Leadership & Mentorship**: Drove code-review standards and ran cross-team sessions on serverless/event-driven architecture, mentoring developers and accelerating onboarding.
 `,
 /* 
 *  **Enterprise Data Architecture**: Designed and built a Central Data Service from scratch to aggregate fragmented data across multiple e-commerce websites, creating a single source of truth powering core internal services for Finance (ERP integrations), Marketing analytics, and Auction reporting.
