@@ -7,8 +7,8 @@ export const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.stanleygibbons.com/',
     workDuration: [
       {
-        fromDate: { year: 2023, month: 'September' },
-        toDate: { year: 2026, month: 'June' },
+        fromDate: { year: 2023, month: 'Sep' },
+        toDate: { year: 2026, month: 'Jun' },
         mode: WorkMode.FullTime,
         title: 'Software Engineer',
         // skillSet: [
@@ -56,7 +56,7 @@ export const myJobExp: JobExprience[] = [
     id: 'self_development',
     workDuration: [
       {
-        fromDate: { year: 2022, month: 'July' },
+        fromDate: { year: 2022, month: 'Jul' },
         toDate: { year: 2023, month: 'Aug' },
         mode: WorkMode.FullTime,
         title: 'Relocation & Self Development',

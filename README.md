@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
 
+Live CV: https://thm2320.github.io/ming-resume
+
 # CV
 
 <p>A frontend project for my CV. </p>
