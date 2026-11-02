@@ -6,7 +6,7 @@ const IntroSection = () => {
   return (
     <Box>
       <Title order={3}>Introduction</Title>
-      <Flex gap={50}>
+      <Flex direction="column" gap={0}>
         <ReactMarkdown>{introInfo}</ReactMarkdown>
       </Flex>
     </Box>
