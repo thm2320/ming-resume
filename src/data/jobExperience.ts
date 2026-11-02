@@ -110,22 +110,6 @@ export const myJobExp: JobExprience[] = [
 `,
   },
   {
-    id: 'freelance',
-    workDuration: [
-      {
-        fromDate: { year: 2020, month: 'Jul' },
-        toDate: { year: 2021, month: 'Mar' },
-        mode: WorkMode.PartTime,
-        title: 'Freelance',
-        // skillSet: ['React.js', 'Typescript', 'Sass'],
-      },
-    ],
-    location: 'Hong Kong',
-    descriptions: `
-* **E-Commerce Feature Delivery**: Modernized and optimized the company's retail platform to support high-traffic sales events, deploying time-sensitive feature updates and ensuring UI/UX reliability during peak user volume.
-`,
-  },
-  {
     id: 'mtg',
     workDuration: [
       {
