@@ -1,7 +1,7 @@
 import { BasicInfo } from '../types/basicInfo.type';
 
 export const basicInfo: BasicInfo = {
-  name: 'Ho Ming, Tsang',
+  name: 'Ming Tsang',
   email: 'mingtsang232@gmail.com',
   phone: '+44 7737 295484',
   github: 'https://github.com/thm2320',
