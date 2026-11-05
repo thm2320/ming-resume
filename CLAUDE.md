@@ -52,6 +52,8 @@ printing' fails because the avatar was removed. Ignore it unless the task is abo
 
 ## Workflow
 
+- The parent agent of a new worktree does the planning. Once the plan is ready,
+  spawn a sub agent to do the coding using `/orchestration` (not the Agent tool).
 - Make the smallest change that satisfies the task. Touch nothing else.
 - Leave commented-out code alone unless asked.
 - Commit on a branch. Never push, open PRs or merge unless asked.
