@@ -33,12 +33,13 @@ export const myJobExp: JobExprience[] = [
     ],
     location: 'London',
     descriptions: `
-* **Data Architecture & Large-Scale ETL**: Designed and built a Centralised Data Service from scratch featuring high-throughput, event-driven ETL pipelines to process 100k+ records of e-commerce user, order, and product data; maximized operational efficiency by replacing fragmented legacy processes for Finance (ERP), Marketing analytics, and Auction reporting.
-* **Product Delivery & AI Velocity**: Architected and deployed a mission-critical production system for auction revenue in 2 months using TypeScript, Next.js, and AWS Serverless; leveraged AI tools (Cursor, Claude) to automate technical documentation and API specs, roughly doubling story points completed per sprint.
-* **Cloud Cost Optimization**: Slashed AWS infrastructure costs by $50,000/month (~£40k) by auditing legacy setups and cutting live production system API costs by 90% through an ECS-to-Lambda serverless migration.
-* **Zero-Downtime Migration at Scale**: Engineered a reusable ETL pipeline in TypeScript, Node.js, and PostgreSQL that migrated 60M+ stamps (10k+ sets across 100+ countries) across production systems with 0% downtime and zero data loss.
-* **API Performance & Caching**: Applied deep-dive production system debugging and profiling to isolate query bottlenecks, reducing search API response latency from 20s to under 1s; separately implemented Redis caching of search results in a backend API, cutting database traffic by ~80%.
-* **CI/CD Automation**: Replaced a 25-minute manual deployment with an automated GitHub Actions pipeline that runs tests and deploys in ~10 minutes, unattended and queued, freeing developers to work on other tasks.
+* **Data Architecture & Large-Scale ETL**: Built a central data service from scratch, with event-driven pipelines (SNS, SQS, Step Functions) that process 100k+ e-commerce records a day. Replaced scattered manual processes for Finance (ERP), Marketing and Auction reporting.
+* **Cloud Cost Optimisation**: Volunteered to shut down unused legacy websites on AWS, tracing shared resources through the infrastructure code and logs. Removed them in small batches with no outages, cutting the AWS bill by about $50k/month (~£40k), mostly idle RDS and Redis.
+* **Large-Scale Data Migration**: Migrated 60M+ stamp records (10k+ sets from 100+ countries) to a new platform on my own, in 2 weeks against a 1-month estimate. Built re-runnable scripts in TypeScript, Node.js and PostgreSQL, with zero downtime and no data loss.
+* **API Performance & Caching**: Cut search API response time from 20s to under 1s by moving filtering into PostgreSQL and indexing a pre-calculated sort order. Added Redis caching for repeated searches, cutting database traffic by about 80%.
+* **Digital Auction Platform**: Helped put the company's auction house online in about 2 months as one of four developers, launching on time in December. Built the API, the third-party auction platform integration and parts of the Next.js frontend, using Redis caching to stay fast when the third-party API was unstable.
+* **AI-Assisted Delivery**: Adopted AI agents for feature work, first Cursor with Linear tickets, then Orca running several Claude agents in parallel. Approved each plan and reviewed all code, with a second AI review, roughly doubling the story points I completed per sprint.
+* **CI/CD Automation**: Replaced a 25-minute manual deployment with a GitHub Actions pipeline that tests and deploys unattended in about 10 minutes. Freed developers to work on other tasks while it runs.
 * **Technical Leadership & Mentorship**: Drove code-review standards and ran cross-team sessions on serverless/event-driven architecture, mentoring developers and accelerating onboarding.
 `,
 /* 
