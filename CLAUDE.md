@@ -35,9 +35,9 @@ printing' fails because the avatar was removed. Ignore it unless the task is abo
   ask or leave it out. Do not guess.
 - Do not claim real AWS deployment for the stock-viewer project. Its Terraform was
   only tested against Floci.
-- Do not restore the removed Freelance job entry. It was not real experience.
+- Do not restore the removed Freelance job entry.
   (`Freelance` in `src/types/jobExperience.type.ts` is only a type value.)
-- Do not state why the last job ended.
+- Do not give a reason for leaving any job.
 - No availability line. This is the owner's choice.
 - Keep skills unchanged unless told. Kubernetes, Python, GraphQL and Redis are
   kept on purpose.
@@ -54,6 +54,7 @@ printing' fails because the avatar was removed. Ignore it unless the task is abo
 
 - The parent agent of a new worktree does the planning. Once the plan is ready,
   spawn a sub agent to do the coding using `/orchestration` (not the Agent tool).
+- Spawned workers use the Sonnet 5.5 model (`--model claude-sonnet-5-5`).
 - Make the smallest change that satisfies the task. Touch nothing else.
 - Leave commented-out code alone unless asked.
 - Commit on a branch. Never push, open PRs or merge unless asked.
