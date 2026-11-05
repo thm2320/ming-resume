@@ -40,7 +40,7 @@ export const myJobExp: JobExprience[] = [
 * **Digital Auction Platform**: Helped put the company's auction house online in about 2 months as one of four developers, launching on time in December. Built the API, the third-party auction platform integration and parts of the Next.js frontend, using Redis caching to stay fast when the third-party API was unstable.
 * **AI-Assisted Delivery**: Adopted AI agents for feature work, first Cursor with Linear tickets, then Orca running several Claude agents in parallel. Approved each plan and reviewed all code, with a second AI review, roughly doubling the story points I completed per sprint.
 * **CI/CD Automation**: Replaced a 25-minute manual deployment with a GitHub Actions pipeline that tests and deploys unattended in about 10 minutes. Freed developers to work on other tasks while it runs.
-* **Technical Leadership & Mentorship**: Drove code-review standards and ran cross-team sessions on serverless/event-driven architecture, mentoring developers and accelerating onboarding.
+* **Technical Leadership & Mentorship**: Set code-review standards and ran cross-team sessions on serverless and event-driven architecture. Helped developers onboard faster and raised code quality across the team.
 `,
 /* 
 *  **Enterprise Data Architecture**: Designed and built a Central Data Service from scratch to aggregate fragmented data across multiple e-commerce websites, creating a single source of truth powering core internal services for Finance (ERP integrations), Marketing analytics, and Auction reporting.
