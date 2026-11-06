@@ -34,12 +34,12 @@ export const myJobExp: JobExprience[] = [
     location: 'London',
     descriptions: `
 * **Data Architecture & Large-Scale ETL**: Built a central data service from scratch, with event-driven pipelines (SNS, SQS, Step Functions) that process 100k+ e-commerce records a day. Replaced scattered manual processes for Finance (ERP), Marketing and Auction reporting.
-* **Cloud Cost Optimisation**: Volunteered to shut down unused legacy websites on AWS, tracing shared resources through the infrastructure code and logs. Removed them in small batches with no outages, cutting the AWS bill by about $50k/month (~£40k), mostly idle RDS and Redis.
-* **Large-Scale Data Migration**: Migrated 60M+ stamp records (10k+ sets from 100+ countries) to a new platform on my own, in 2 weeks against a 1-month estimate. Built re-runnable scripts in TypeScript, Node.js and PostgreSQL, with zero downtime and no data loss.
+* **Cloud Cost Optimisation**: Volunteered to shut down unused legacy websites on AWS, tracing shared resources through the infrastructure code and logs. Removed them in small batches with no outages, cutting the AWS bill by about $50k/month (~£40k).
+* **Large-Scale Data Migration**: Migrated 60M+ stamp records to a new platform, in 2 weeks against a 1-month estimate. Built re-runnable scripts in TypeScript, Node.js and PostgreSQL, with zero downtime and no data loss.
 * **API Performance & Caching**: Cut search API response time from 20s to under 1s by moving filtering into PostgreSQL and indexing a pre-calculated sort order. Added Redis caching for repeated searches, cutting database traffic by about 80%.
-* **Digital Auction Platform**: Helped put the company's auction house online in about 2 months as one of four developers, launching on time in December. Built the API, the third-party auction platform integration and parts of the Next.js frontend, using Redis caching to stay fast when the third-party API was unstable.
+* **Digital Auction Platform**: Helped take the company’s auction house online for the first time, launching on time in about 2 months. Built the API and the third-party auction platform integration, using Redis caching to stay fast when that API was unstable.
 * **AI-Assisted Delivery**: Adopted AI agents for feature work, first Cursor with Linear tickets, then Orca running several Claude agents in parallel. Approved each plan and reviewed all code, with a second AI review, roughly doubling the story points I completed per sprint.
-* **CI/CD Automation**: Replaced a 25-minute manual deployment with a GitHub Actions pipeline that tests and deploys unattended in about 10 minutes. Freed developers to work on other tasks while it runs.
+* **CI/CD Automation**: Cut deployment time from 25 to about 10 minutes by replacing manual deploys with GitHub Actions.
 * **Technical Leadership & Mentorship**: Set code-review standards and ran cross-team sessions on serverless and event-driven architecture. Helped developers onboard faster and raised code quality across the team.
 `,
 /* 
@@ -105,8 +105,8 @@ export const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice/distributed architecture, successfully migrating **10M+ seafarer records with zero data loss** while serving **1,000+ active daily users**.
-* **Revenue-Generating Integration:** Engineered a high-availability third-party system integration utilizing AWS Lambda and REST APIs, enabling seamless paid subscription models and launching a new enterprise revenue channel.
+* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice/distributed architecture, successfully migrating 10M+ seafarer records with zero data loss while serving 1,000+ active daily users.
+* **Ship Tracking Integration**: Integrated a third-party ship GPS provider using AWS Lambda and REST APIs, so customers could subscribe to location data for their vessels. Launched a new paid service for the company, with subscriptions arranged directly with the sales team.
 * **Automated Data Monitoring & Reliability:** Engineered an automated data reconciliation system using AWS CDK and ECS, eliminating daily 1-hour manual data validation tasks and saving the team 5+ hours per week in operational maintenance.
 * **Global Team Leadership**: Managed and mentored a diverse, remote global engineering team, establishing rigorous code review standards and architectural guidance to ensure high-quality, collaborative delivery.
 `,
