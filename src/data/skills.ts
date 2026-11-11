@@ -2,14 +2,15 @@ import { Skills } from "../types/skill.type";
 
 export const skills: Skills = {
   "Cloud, IaC & DevOps":
-    "AWS (Lambda, SQS, SNS, Step Functions, ECS), Terraform, SST v3, CDK, Pulumi (custom AWS resources), Serverless, Vercel, Docker, Kubernetes, GitHub Actions (CI/CD), Redis, Sentry",
+    "AWS (Lambda, SQS, SNS, Step Functions, ECS), SST (v2, v3), AWS CDK, Pulumi, Terraform, Serverless Framework, Docker, GitHub Actions (CI/CD), Vercel, Redis, Sentry",
   "Backend & APIs":
-    "Node.js, NestJS, Express.js, REST APIs, GraphQL, Socket.io",
-  Languages: "TypeScript, JavaScript, SQL, Python, Java (Background)",
-  "Frontend Development": "React.js, Next.js, Redux, Chakra UI",
+    "Node.js, NestJS, REST APIs, GraphQL, Socket.io",
+  Languages: "TypeScript, JavaScript, SQL, Python, Java",
+  "Frontend Development": "React.js, Next.js, Chakra UI",
   Database: "PostgreSQL, AWS DynamoDB, MongoDB, MySQL",
   "Testing & Tooling": "Jest, Vitest, Postman",
   "AI-Assisted Engineering": "Cursor, Claude, Orca (AI agent orchestration)",
+  "Familiar with": "Kubernetes, Redux"
 };
 
 /*

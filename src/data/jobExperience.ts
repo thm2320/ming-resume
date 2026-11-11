@@ -72,11 +72,11 @@ export const myJobExp: JobExprience[] = [
         // ],
       },
     ],
-    location: 'London',
+    location: 'Hong Kong / London',
     descriptions: `
-* **AWS Cloud Certification**: Earned the AWS Certified Developer - Associate certification, validating expertise in cloud-native development, security, and deployment.
-* **Cloud & DevOps Upskilling**: Advanced technical proficiency in core AWS services, DevOps principles, and automated infrastructure configuration to align with UK market standards.
-* **Full-Stack Projects (TypeScript, Next.js, Node.js, Jest)**: Designed personal architectures with strict test coverage, implementing Socket.io to build low-latency, real-time data communication services.
+* **Relocation**: Moved from Hong Kong to London in April 2023.
+* **AWS Certification**: Completed an online DevOps and AWS course, practised hands-on with AWS services, and earned the AWS Certified Developer - Associate certification.
+* **• Full-Stack Projects**: Built personal projects with TypeScript, Node.js, React, Next.js and Jest, including a real-time two-player Connect Four game using Socket.io.
     `,
   },
   {
@@ -105,10 +105,10 @@ export const myJobExp: JobExprience[] = [
     companyUrl: 'https://www.fleetship.com/',
     location: 'Hong Kong',
     descriptions: `
-* **Monolith-to-Microservices Migration:** Architected the zero-downtime migration of a legacy Java monolith to a Node.js/AWS microservice/distributed architecture, successfully migrating 10M+ seafarer records with zero data loss while serving 1,000+ active daily users.
-* **Ship Tracking Integration**: Integrated a third-party ship GPS provider using AWS Lambda and REST APIs, so customers could subscribe to location data for their vessels. Launched a new paid service for the company, with subscriptions arranged directly with the sales team.
-* **Automated Data Monitoring & Reliability:** Engineered an automated data reconciliation system using AWS CDK and ECS, eliminating daily 1-hour manual data validation tasks and saving the team 5+ hours per week in operational maintenance.
-* **Global Team Leadership**: Managed and mentored a diverse, remote global engineering team, establishing rigorous code review standards and architectural guidance to ensure high-quality, collaborative delivery.
+* **Microservice Migration**: Moved the seafarer module of a legacy Java monolith to a Node.js microservice on AWS, covering crew records, skills and fleet assignments. Kept data in sync with the old system after go-live, so both could run side by side.
+* **Ship Tracking Integration**: Integrated a third-party ship GPS provider using AWS Lambda and REST APIs, so customers could subscribe to location data for their vessels. Launched a new paid service for the company.
+* **Data Sync Monitoring**: Built automated monitoring with AWS CDK and ECS to catch data sync issues between the old and new systems. Removed a daily 1-hour manual cross-check.
+* **Remote Team Leadership**: Led a remote team of junior contractors in India, assigning tickets, unblocking them when they were stuck and reviewing their code.
 `,
   },
   {
@@ -128,9 +128,9 @@ export const myJobExp: JobExprience[] = [
         //   'ExtJs',
         // ],
         descriptions: `
-* **System Analyst (Oct 2018 - Jul 2020)**: Led architectural modernization of legacy enterprise systems into modular platforms (Java, Spring Boot, SQL). Executed load-testing strategies (JMeter) to eliminate critical performance bottlenecks, and engineered 3rd-party integrations to deliver tailored client solutions.
-* **Senior Software Engineer (Dec 2015 - Oct 2018)**: Architected a modular, reusable charting web application adopted across multiple internal systems to unlock new business opportunities. Served as Tier-3 technical escalation lead and managed production release deployments.
-* **Software Engineer (Sep 2012 - Nov 2015)**: Contributed to a mission-critical Hong Kong Government Public Health initiative powering public health data infrastructure. Co-owned development and feature expansion for the company's flagship product.`,
+* **System Analyst (Oct 2018 - Jul 2020)**: Redesigned several outdated modules on my own into modern code that was easier to extend (Java, Grails, Tomcat). Fixed performance issues using load testing, and built third-party integrations for tailored client solutions.
+* **Senior Software Engineer (Dec 2015 - Oct 2018)**: Built a configurable charting web app for patient triage data such as temperature and blood pressure, which the company sold to clinics and hospitals as a new paid service. Supported hospital clients on call, including evenings and weekends, and took part in major release deployments.
+* **Software Engineer (Sep 2012 - Nov 2015)**: Worked on a Hong Kong Government public health project. Helped maintain and develop the company's main product.`,
       },
 //       
     ],
